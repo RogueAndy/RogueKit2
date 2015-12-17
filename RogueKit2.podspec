@@ -26,4 +26,5 @@ s.source_files = 'RogueKit/*'
 s.frameworks = 'Foundation', 'UIKit'
 s.dependency 'MBProgressHUD'
 
+
 end
