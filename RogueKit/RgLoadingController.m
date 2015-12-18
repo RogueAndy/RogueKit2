@@ -168,14 +168,14 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 
 
 - (void)hideLoadingActivityView:(CGFloat)after withComplete:(void(^)(void))completeBlock {
-//    [_hud setRemoveFromSuperViewOnHide:YES];
-//    [_hud setMinShowTime:0.3];
-//    __weak RgLoadingController *weakSelf = self;
-//    [_hud setCompletionBlock:^{
-//        [weakSelf removeToAllLoadingActivityViewControllers];
-//        if(completeBlock){completeBlock();}
-//    }];
-//    [_hud hide:YES afterDelay:after];
+    [_hud setRemoveFromSuperViewOnHide:YES];
+    [_hud setMinShowTime:0.3];
+    __weak RgLoadingController *weakSelf = self;
+    [_hud setCompletionBlock:^{
+        [weakSelf removeToAllLoadingActivityViewControllers];
+        if(completeBlock){completeBlock();}
+    }];
+    [_hud hide:YES afterDelay:after];
 }
 
 - (void)addToAllLoadingActivityViewControllers {
