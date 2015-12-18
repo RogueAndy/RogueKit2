@@ -6,8 +6,11 @@
 //  Copyright © 2015年 Rogue. All rights reserved.
 //
 
+
 #import "RgLoadingController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#undef __weak
+#define __weak
 
 static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 @interface RgLoadingController ()
