@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RgLoadingController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [RgLoadingController showLoadingActivityViewOn:self withTitle:@"哈哈哈"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

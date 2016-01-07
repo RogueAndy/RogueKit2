@@ -6,6 +6,7 @@
 target 'RogueKitDemo' do
 
 pod 'Masonry'
+pod 'MBProgressHUD'
 
 end
 
