@@ -14,6 +14,7 @@
 		820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D01C3E4A3F00B39563 /* Main.storyboard */; };
 		820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D31C3E4A3F00B39563 /* Assets.xcassets */; };
 		820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */; };
+		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		820EC8D31C3E4A3F00B39563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		820EC8D61C3E4A3F00B39563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820EC8D81C3E4A3F00B39563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820EC8DF1C3E52B200B39563 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
+		820EC8E01C3E52B200B39563 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
 		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +68,7 @@
 		820EC8C61C3E4A3F00B39563 /* RogueKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				820EC8DE1C3E52B200B39563 /* RogueKit */,
 				820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */,
 				820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */,
 				820EC8CD1C3E4A3F00B39563 /* ViewController.h */,
@@ -84,6 +88,16 @@
 				820EC8C81C3E4A3F00B39563 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
+			isa = PBXGroup;
+			children = (
+				820EC8DF1C3E52B200B39563 /* RgLoadingController.h */,
+				820EC8E01C3E52B200B39563 /* RgLoadingController.m */,
+			);
+			name = RogueKit;
+			path = ../../../RogueKit;
 			sourceTree = "<group>";
 		};
 		C30862CFCCFA93BC062D6886 /* Pods */ = {
@@ -227,6 +241,7 @@
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
+				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
