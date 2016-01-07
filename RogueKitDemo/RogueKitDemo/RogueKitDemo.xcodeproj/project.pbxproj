@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */; };
 		820EC8C91C3E4A3F00B39563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8C81C3E4A3F00B39563 /* main.m */; };
 		820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */; };
 		820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CE1C3E4A3F00B39563 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RogueKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogueKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EC8C81C3E4A3F00B39563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		820EC8D31C3E4A3F00B39563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		820EC8D61C3E4A3F00B39563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820EC8D81C3E4A3F00B39563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				820EC8C61C3E4A3F00B39563 /* RogueKitDemo */,
 				820EC8C51C3E4A3F00B39563 /* Products */,
+				C30862CFCCFA93BC062D6886 /* Pods */,
+				EF6BD6B7373E0C5E8F4F29DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C30862CFCCFA93BC062D6886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */,
+				B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF6BD6B7373E0C5E8F4F29DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820EC8DB1C3E4A3F00B39563 /* Build configuration list for PBXNativeTarget "RogueKitDemo" */;
 			buildPhases = (
+				54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */,
 				820EC8C01C3E4A3F00B39563 /* Sources */,
 				820EC8C11C3E4A3F00B39563 /* Frameworks */,
 				820EC8C21C3E4A3F00B39563 /* Resources */,
+				8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */,
+				3050FE6244ADF762BEC3D285 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3050FE6244ADF762BEC3D285 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		820EC8C01C3E4A3F00B39563 /* Sources */ = {
@@ -261,9 +336,11 @@
 		};
 		820EC8DC1C3E4A3F00B39563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +349,11 @@
 		};
 		820EC8DD1C3E4A3F00B39563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +379,7 @@
 				820EC8DD1C3E4A3F00B39563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
