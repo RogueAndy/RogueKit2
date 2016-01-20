@@ -15,6 +15,9 @@
 		820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D31C3E4A3F00B39563 /* Assets.xcassets */; };
 		820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */; };
 		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
+		823E45A61C4E29CC00AEDA91 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A51C4E29CC00AEDA91 /* RogueViewController.m */; };
+		823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A81C4E349D00AEDA91 /* RogueCache.m */; };
+		823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		820EC8D81C3E4A3F00B39563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820EC8DF1C3E52B200B39563 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
 		820EC8E01C3E52B200B39563 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
+		823E45A41C4E29CC00AEDA91 /* RogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewController.h; sourceTree = "<group>"; };
+		823E45A51C4E29CC00AEDA91 /* RogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueViewController.m; sourceTree = "<group>"; };
+		823E45A71C4E349D00AEDA91 /* RogueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueCache.h; sourceTree = "<group>"; };
+		823E45A81C4E349D00AEDA91 /* RogueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCache.m; sourceTree = "<group>"; };
+		823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewControllerTranstion.h; sourceTree = "<group>"; };
+		823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueViewControllerTranstion.m; sourceTree = "<group>"; };
 		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +102,14 @@
 		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
 			isa = PBXGroup;
 			children = (
+				823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */,
+				823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */,
 				820EC8DF1C3E52B200B39563 /* RgLoadingController.h */,
 				820EC8E01C3E52B200B39563 /* RgLoadingController.m */,
+				823E45A41C4E29CC00AEDA91 /* RogueViewController.h */,
+				823E45A51C4E29CC00AEDA91 /* RogueViewController.m */,
+				823E45A71C4E349D00AEDA91 /* RogueCache.h */,
+				823E45A81C4E349D00AEDA91 /* RogueCache.m */,
 			);
 			name = RogueKit;
 			path = ../../../RogueKit;
@@ -238,9 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
+				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
+				823E45A61C4E29CC00AEDA91 /* RogueViewController.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Rogue. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RogueViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : RogueViewController
 
 
 @end
