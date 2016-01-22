@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RogueNetWorkViewController.h"
 #import "ViewController.h"
+#import "RgLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    RogueNetWorkViewController *vc = [RogueNetWorkViewController new];
+    RgLoginViewController *vc = [RgLoginViewController new];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

@@ -12,4 +12,6 @@
 
 + (void)sesstionConfigure;
 
++ (void)apiMethod:(NSString *)method parameters:(NSDictionary *)parameter completeBlock:(void (^)(BOOL status, NSDictionary *responseObj, NSString *responseMessage))complete;
+
 @end

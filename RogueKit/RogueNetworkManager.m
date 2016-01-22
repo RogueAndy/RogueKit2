@@ -10,12 +10,9 @@
 #import <AFNetworking/AFNetworking.h>
 
 static RogueNetworkManager *manager = nil;
+static NSString *BaseURL = @"http://localhost:8080/ConnectDemo/";
 
 @interface RogueNetworkManager()
-
-
-
-//@property (nonatomic, st
 
 @end
 
@@ -53,6 +50,24 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
           failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
               NSLog(@"dawdawwadwa");
           }];
+
+}
+
++ (void)apiMethod:(NSString *)method parameters:(NSDictionary *)parameter completeBlock:(void (^)(BOOL status, NSDictionary *responseObj, NSString *responseMessage))complete {
+
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    
+    [session POST:[BaseURL stringByAppendingString:method] parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if([[responseObject objectForKey:@"status"] isEqualToString:@"success"]) {
+            complete(YES, responseObject, [responseObject objectForKey:@"message"]);
+        } else {
+            complete(NO, responseObject, [responseObject objectForKey:@"message"]);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        complete(NO, nil, @"返回数据失败，报错!");
+    }];
 
 }
 
