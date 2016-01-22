@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RogueNetWorkViewController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -20,7 +21,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ViewController *vc = [ViewController new];
+    RogueNetWorkViewController *vc = [RogueNetWorkViewController new];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

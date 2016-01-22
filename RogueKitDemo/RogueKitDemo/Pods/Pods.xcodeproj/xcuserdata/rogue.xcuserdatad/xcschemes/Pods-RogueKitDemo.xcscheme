@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A1E178D346A0C5623C2C18D3'
+               BlueprintIdentifier = '19D19CFC9879ED67C59A798E'
                BlueprintName = 'Pods-RogueKitDemo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-RogueKitDemo.a'>
