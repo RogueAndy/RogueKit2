@@ -10,6 +10,8 @@
 #import "Masonry.h"
 #import "RgTextField.h"
 #import "RgRegisterViewController.h"
+#import "RogueNetworkManager.h"
+#import "RgLoadingController.h"
 
 @interface RgLoginViewController ()<UITextFieldDelegate>
 
@@ -108,8 +110,18 @@
 }
 
 - (void)loginAction {
-
-
+    __weak RgLoginViewController *weakSelf = self;
+    [RgLoadingController showLoadingActivityViewOn:self withTitle:@"登录中"];
+    [RogueNetworkManager apiMethod:@"userLoginAction" parameters:@{@"username":_accountField.text, @"password":_passField.text} completeBlock:^(BOOL status, NSDictionary *responseObj, NSString *responseMessage) {
+        if(!status) {
+            [RgLoadingController showLoadingSoonDisplayActivityViewOn:weakSelf withTitle:responseMessage withAfter:1 withComplete:nil];
+            return ;
+        }
+        
+        [RgLoadingController showLoadingSoonDisplayActivityViewOn:weakSelf withTitle:responseMessage withAfter:1 withComplete:nil];
+        
+    }];
+    
 
 }
 

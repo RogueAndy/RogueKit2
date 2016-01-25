@@ -16,6 +16,9 @@
 
 @property (nonatomic, assign) RogueTranstionType transtionType;
 
+@property (nonatomic, assign) BOOL isLogin;
+
 + (instancetype)shareInstance;
+
 
 @end

@@ -10,6 +10,7 @@
 #import "RogueNetWorkViewController.h"
 #import "ViewController.h"
 #import "RgLoginViewController.h"
+#import "RgTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    RgLoginViewController *vc = [RgLoginViewController new];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    RgTabbarViewController *vc = [RgTabbarViewController new];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
     return YES;
