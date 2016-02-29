@@ -11,6 +11,8 @@
 #import "ViewController.h"
 #import "RgLoginViewController.h"
 #import "RgTabbarViewController.h"
+#import "RogueKitDemo-Swift.h"
+#import "RgUpimageViewController.h"
 
 @interface AppDelegate ()
 

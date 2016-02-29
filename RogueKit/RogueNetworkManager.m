@@ -71,4 +71,19 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
 
 }
 
++ (void)apiMethod:(NSString *)method stream:(NSData *)datas parameters:(NSDictionary *)parameter completeBlock:(void (^)(BOOL, NSDictionary *, NSString *))complete {
+
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    
+    
+    [session POST:[BaseURL stringByAppendingString:method] parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        [formData appendPartWithFileData:datas name:@"files" fileName:@"files.jpg" mimeType:@"image/jpeg"];
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", error);
+    }];
+
+}
+
 @end

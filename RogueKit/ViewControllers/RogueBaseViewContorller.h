@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Masonry.h"
+
 @interface RogueBaseViewContorller : UIViewController
 
 @end

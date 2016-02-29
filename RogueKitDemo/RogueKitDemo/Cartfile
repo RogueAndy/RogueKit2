@@ -1,0 +1,2 @@
+github "SnapKit/SnapKit" >= 0.15.0
+github "Alamofire/Alamofire" ~> 3.0
