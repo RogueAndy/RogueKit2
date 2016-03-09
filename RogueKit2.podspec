@@ -24,7 +24,7 @@ s.source_files = 'RogueKit/*'
 # s.osx.exclude_files = 'Classes/ios'
 # s.public_header_files = 'Classes/**/*.h'
 s.frameworks = 'Foundation', 'UIKit'
-s.dependency 'MBProgressHUD', 'AFNetworking'
-
+s.dependency 'MBProgressHUD'
+s.dependency 'AFNetworking'
 
 end
