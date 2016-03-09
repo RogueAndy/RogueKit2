@@ -33,6 +33,8 @@
     self.title = @"登陆界面";
     [self loadSubViews];
     [self loadLayout];
+    
+    
 }
 
 - (void)loadSubViews {

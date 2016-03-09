@@ -13,6 +13,7 @@
 #import "RgTabbarViewController.h"
 #import "RogueKitDemo-Swift.h"
 #import "RgUpimageViewController.h"
+#import "RgCollectViewController1.h"
 
 @interface AppDelegate ()
 
@@ -25,10 +26,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    RgTabbarViewController *vc = [RgTabbarViewController new];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgCollectViewController1 new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 
