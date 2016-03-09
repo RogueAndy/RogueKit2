@@ -176,7 +176,7 @@ static NSInteger ItemBeginIndex = 30000;
                 case UIGestureRecognizerStateChanged:
                 {
                     
-                    CGPoint touchPoint = [gesture locationInView:gesture.view];
+//                    CGPoint touchPoint = [gesture locationInView:gesture.view];
                     
                 }
                     break;

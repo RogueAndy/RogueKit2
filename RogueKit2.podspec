@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "RogueKit2"
-s.version          = "0.0.5"
+s.version          = "0.0.7"
 s.summary          = "A marquee view used on iOS."
 s.description      = <<-DESC
 It is a marquee view used on iOS, which implement by Objective-C.
@@ -24,7 +24,7 @@ s.source_files = 'RogueKit/*'
 # s.osx.exclude_files = 'Classes/ios'
 # s.public_header_files = 'Classes/**/*.h'
 s.frameworks = 'Foundation', 'UIKit'
-s.dependency 'MBProgressHUD'
+s.dependency 'MBProgressHUD', 'AFNetworking'
 
 
 end
