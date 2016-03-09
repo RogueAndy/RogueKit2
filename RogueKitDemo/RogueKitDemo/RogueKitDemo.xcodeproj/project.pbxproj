@@ -19,7 +19,6 @@
 		823E45A61C4E29CC00AEDA91 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A51C4E29CC00AEDA91 /* RogueViewController.m */; };
 		823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A81C4E349D00AEDA91 /* RogueCache.m */; };
 		823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */; };
-		823E45B51C50BB3C00AEDA91 /* RogueNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45B41C50BB3C00AEDA91 /* RogueNetworkManager.m */; };
 		823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */; };
 		823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */; };
 		823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */; };
@@ -62,8 +61,6 @@
 		823E45A81C4E349D00AEDA91 /* RogueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCache.m; sourceTree = "<group>"; };
 		823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewControllerTranstion.h; sourceTree = "<group>"; };
 		823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueViewControllerTranstion.m; sourceTree = "<group>"; };
-		823E45B31C50BB3C00AEDA91 /* RogueNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueNetworkManager.h; sourceTree = "<group>"; };
-		823E45B41C50BB3C00AEDA91 /* RogueNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueNetworkManager.m; sourceTree = "<group>"; };
 		823E45B61C50BE4D00AEDA91 /* RogueNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueNetWorkViewController.h; sourceTree = "<group>"; };
 		823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueNetWorkViewController.m; sourceTree = "<group>"; };
 		823E45BA1C52093400AEDA91 /* RogueBaseViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueBaseViewContorller.h; sourceTree = "<group>"; };
@@ -171,8 +168,6 @@
 				823E45A51C4E29CC00AEDA91 /* RogueViewController.m */,
 				823E45A71C4E349D00AEDA91 /* RogueCache.h */,
 				823E45A81C4E349D00AEDA91 /* RogueCache.m */,
-				823E45B31C50BB3C00AEDA91 /* RogueNetworkManager.h */,
-				823E45B41C50BB3C00AEDA91 /* RogueNetworkManager.m */,
 				82718C091C8D535300B582CA /* RogueCollectView.h */,
 				82718C0A1C8D535300B582CA /* RogueCollectView.m */,
 				82718C0C1C8D539900B582CA /* RogueCollectViewItem.h */,
@@ -387,7 +382,6 @@
 				823E45A61C4E29CC00AEDA91 /* RogueViewController.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
-				823E45B51C50BB3C00AEDA91 /* RogueNetworkManager.m in Sources */,
 				82718C0E1C8D539900B582CA /* RogueCollectViewItem.m in Sources */,
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,

@@ -9,7 +9,6 @@
 #import "RgRegisterViewController.h"
 #import "Masonry.h"
 #import "RgTextField.h"
-#import "RogueNetworkManager.h"
 
 @interface RgRegisterViewController ()<UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -172,14 +171,14 @@
 
 - (void)registerAction {
 
-    NSDictionary *dic = @{@"password":_passField.text, @"username":_accountField.text, @"userage":_ageField.text, @"usersex":@"", @"interest":_interestField.text};
-    [RogueNetworkManager apiMethod:@"registerIosuserWithUserInfor" parameters:dic completeBlock:^(BOOL status, NSDictionary *responseObj, NSString *responseMessage) {
-        if(status) {
-        
-            NSLog(@"%@", responseObj);
-        
-        }
-    }];
+//    NSDictionary *dic = @{@"password":_passField.text, @"username":_accountField.text, @"userage":_ageField.text, @"usersex":@"", @"interest":_interestField.text};
+//    [RogueNetworkManager apiMethod:@"registerIosuserWithUserInfor" parameters:dic completeBlock:^(BOOL status, NSDictionary *responseObj, NSString *responseMessage) {
+//        if(status) {
+//        
+//            NSLog(@"%@", responseObj);
+//        
+//        }
+//    }];
 
 }
 

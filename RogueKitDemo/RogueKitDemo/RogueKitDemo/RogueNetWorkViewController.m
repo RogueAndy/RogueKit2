@@ -7,7 +7,6 @@
 //
 
 #import "RogueNetWorkViewController.h"
-#import "RogueNetworkManager.h"
 
 @interface RogueNetWorkViewController ()
 
@@ -29,7 +28,6 @@
 
 - (void)testNet  {
     
-    [RogueNetworkManager sesstionConfigure];
 
 }
 @end

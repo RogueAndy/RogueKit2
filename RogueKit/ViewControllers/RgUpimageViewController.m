@@ -7,7 +7,6 @@
 //
 
 #import "RgUpimageViewController.h"
-#import "RogueNetworkManager.h"
 
 @interface RgUpimageViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -54,11 +53,11 @@
 
 - (void)right {
     
-    NSData *datas = UIImageJPEGRepresentation(_imageView.image, 0.5);
-
-    [RogueNetworkManager apiMethod:@"testUploadImageAction" parameters:@{@"userid":@"1111111"} completeBlock:^(BOOL status, NSDictionary *responseObj, NSString *responseMessage) {
-        NSLog(@"dwadawwd");
-    }];
+//    NSData *datas = UIImageJPEGRepresentation(_imageView.image, 0.5);
+//
+//    [RogueNetworkManager apiMethod:@"testUploadImageAction" parameters:@{@"userid":@"1111111"} completeBlock:^(BOOL status, NSDictionary *responseObj, NSString *responseMessage) {
+//        NSLog(@"dwadawwd");
+//    }];
     
 //    [RogueNetworkManager apiMethod:@"testUploadImageAction"
 //                            stream:datas
