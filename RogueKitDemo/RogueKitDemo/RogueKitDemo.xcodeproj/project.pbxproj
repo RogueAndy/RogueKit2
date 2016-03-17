@@ -30,14 +30,29 @@
 		82718C0B1C8D535300B582CA /* RogueCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C0A1C8D535300B582CA /* RogueCollectView.m */; };
 		82718C0E1C8D539900B582CA /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C0D1C8D539900B582CA /* RogueCollectViewItem.m */; };
 		82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C101C8D5B3400B582CA /* RgCollectViewController1.m */; };
+		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
 		82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DA1C5F3618009B69F4 /* Alamofire.framework */; };
 		82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DC1C5F362A009B69F4 /* SnapKit.framework */; };
 		82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */; };
 		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
+		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
+		82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */; };
+		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
+		82EDC5EE1C9A86DB00E574CD /* RogueKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */; };
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
 		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
 		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82EDC5F01C9A86DB00E574CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820EC8BC1C3E4A3F00B39563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820EC8C31C3E4A3F00B39563;
+			remoteInfo = RogueKitDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RogueKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,12 +95,22 @@
 		82718C0D1C8D539900B582CA /* RogueCollectViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCollectViewItem.m; sourceTree = "<group>"; };
 		82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgCollectViewController1.h; sourceTree = "<group>"; };
 		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
+		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
+		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
 		82EA15DA1C5F3618009B69F4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		82EA15DC1C5F362A009B69F4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftUpimageViewController.swift; sourceTree = "<group>"; };
 		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
 		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
+		82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RgFirstStoryboard.storyboard; sourceTree = "<group>"; };
+		82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgAsyncViewController.h; sourceTree = "<group>"; };
+		82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgAsyncViewController.m; sourceTree = "<group>"; };
+		82EDC5DF1C9A827D00E574CD /* RgNetWorkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgNetWorkObject.h; sourceTree = "<group>"; };
+		82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgNetWorkObject.m; sourceTree = "<group>"; };
+		82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RogueKitDemoTests.m; sourceTree = "<group>"; };
+		82EDC5EF1C9A86DB00E574CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82F344F31C561D720068746D /* RgHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgHomeViewController.h; sourceTree = "<group>"; };
 		82F344F41C561D720068746D /* RgHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgHomeViewController.m; sourceTree = "<group>"; };
 		82F344F61C561D9F0068746D /* RgTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTabbarViewController.h; sourceTree = "<group>"; };
@@ -106,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82EDC5E81C9A86DB00E574CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				820EC8C61C3E4A3F00B39563 /* RogueKitDemo */,
+				82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */,
 				820EC8C51C3E4A3F00B39563 /* Products */,
 				C30862CFCCFA93BC062D6886 /* Pods */,
 				EF6BD6B7373E0C5E8F4F29DA /* Frameworks */,
@@ -123,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */,
+				82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +164,7 @@
 		820EC8C61C3E4A3F00B39563 /* RogueKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				82EDC5DE1C9A822E00E574CD /* 网络连接 */,
 				82EA15DE1C5F3637009B69F4 /* SwiftViews */,
 				823E45B91C52090900AEDA91 /* ViewControllers */,
 				820EC8DE1C3E52B200B39563 /* RogueKit */,
@@ -180,6 +215,7 @@
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
 				823E45C81C520B5C00AEDA91 /* TextFields */,
 				823E45BA1C52093400AEDA91 /* RogueBaseViewContorller.h */,
 				823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */,
@@ -197,6 +233,10 @@
 				82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */,
 				82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */,
 				82718C101C8D5B3400B582CA /* RgCollectViewController1.m */,
+				82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */,
+				82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */,
+				82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */,
+				82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */,
 			);
 			name = ViewControllers;
 			path = ../../../RogueKit/ViewControllers;
@@ -221,6 +261,32 @@
 				82718C071C89637600B582CA /* RgCollectViewItem.swift */,
 			);
 			path = SwiftViews;
+			sourceTree = "<group>";
+		};
+		82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */,
+			);
+			path = StoryBoardViewController;
+			sourceTree = "<group>";
+		};
+		82EDC5DE1C9A822E00E574CD /* 网络连接 */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5DF1C9A827D00E574CD /* RgNetWorkObject.h */,
+				82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */,
+			);
+			path = "网络连接";
+			sourceTree = "<group>";
+		};
+		82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */,
+				82EDC5EF1C9A86DB00E574CD /* Info.plist */,
+			);
+			path = RogueKitDemoTests;
 			sourceTree = "<group>";
 		};
 		C30862CFCCFA93BC062D6886 /* Pods */ = {
@@ -265,6 +331,24 @@
 			productReference = 820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */;
+			buildPhases = (
+				82EDC5E71C9A86DB00E574CD /* Sources */,
+				82EDC5E81C9A86DB00E574CD /* Frameworks */,
+				82EDC5E91C9A86DB00E574CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EDC5F11C9A86DB00E574CD /* PBXTargetDependency */,
+			);
+			name = RogueKitDemoTests;
+			productName = RogueKitDemoTests;
+			productReference = 82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,6 +360,10 @@
 				TargetAttributes = {
 					820EC8C31C3E4A3F00B39563 = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					82EDC5EA1C9A86DB00E574CD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 820EC8C31C3E4A3F00B39563;
 					};
 				};
 			};
@@ -293,6 +381,7 @@
 			projectRoot = "";
 			targets = (
 				820EC8C31C3E4A3F00B39563 /* RogueKitDemo */,
+				82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,8 +392,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */,
+				82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */,
 				820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */,
 				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC5E91C9A86DB00E574CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +470,10 @@
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
 				82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */,
+				82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */,
 				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
+				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
@@ -382,6 +481,7 @@
 				823E45A61C4E29CC00AEDA91 /* RogueViewController.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
+				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
 				82718C0E1C8D539900B582CA /* RogueCollectViewItem.m in Sources */,
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
@@ -390,7 +490,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82EDC5E71C9A86DB00E574CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC5EE1C9A86DB00E574CD /* RogueKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82EDC5F11C9A86DB00E574CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820EC8C31C3E4A3F00B39563 /* RogueKitDemo */;
+			targetProxy = 82EDC5F01C9A86DB00E574CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		820EC8D01C3E4A3F00B39563 /* Main.storyboard */ = {
@@ -501,12 +617,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,12 +643,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +658,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RogueKitDemo/SwiftViews/RogueKitDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		82EDC5F31C9A86DB00E574CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RogueKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Debug;
+		};
+		82EDC5F41C9A86DB00E574CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RogueKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
 			};
 			name = Release;
 		};
@@ -563,6 +705,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EDC5F31C9A86DB00E574CD /* Debug */,
+				82EDC5F41C9A86DB00E574CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

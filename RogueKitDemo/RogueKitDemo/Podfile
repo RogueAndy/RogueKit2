@@ -8,6 +8,7 @@ target 'RogueKitDemo' do
 pod 'Masonry'
 pod 'MBProgressHUD'
 pod 'AFNetworking'
+pod 'AsyncDisplayKit'
 
 end
 

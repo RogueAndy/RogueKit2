@@ -11,9 +11,12 @@
 #import "ViewController.h"
 #import "RgLoginViewController.h"
 #import "RgTabbarViewController.h"
-#import "RogueKitDemo-Swift.h"
+//#import "RogueKitDemo-Swift.h"
 #import "RgUpimageViewController.h"
 #import "RgCollectViewController1.h"
+#import "RgLayerAnimationViewController.h"
+
+#import "RgNetWorkObject.h"
 
 @interface AppDelegate ()
 
@@ -26,11 +29,28 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgCollectViewController1 new]];
+//    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgLayerAnimationViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+    
+    
+    [RgNetWorkObject postMethod:@"getUserWithUserId" parameters:@{@"userid": @"11103080235"} complete:^(NSDictionary *response, RogueNetWorkType networkType) {
+        if(networkType == RogueNetWorkRight) {
+        
+            NSLog(@"%@", response[@"obj"]);
+        
+        }
+    }];
 
     return YES;
+}
+
+- (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)notif
+{
+    
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

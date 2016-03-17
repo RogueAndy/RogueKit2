@@ -9,12 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +47,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>563511B0EDBB715BC1D62077B44D55FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FAB03515C850068D396D27BC39EB013</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B66EA1AD988EBC60DEA7A15A7FA79BC3</key>
+		<key>ADBB1D3569CCB12B4B2341748B29FA8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBAA67638E80E279780543A39F03E25C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
