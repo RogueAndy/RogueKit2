@@ -23,9 +23,9 @@ PODS:
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
   - PINCache (2.2.2)
-  - PINRemoteImage/Core (2.1):
+  - PINRemoteImage/Core (2.1.1):
     - PINCache (>= 2.1)
-  - PINRemoteImage/iOS (2.1):
+  - PINRemoteImage/iOS (2.1.1):
     - PINRemoteImage/Core
 
 DEPENDENCIES:
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
-  PINRemoteImage: e8367ac3f5c234712f1d8c274462ec834d649940
+  PINRemoteImage: 0c620b392a2a41a0a14f143107bbb0596f73dd23
 
 COCOAPODS: 0.39.0
