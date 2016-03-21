@@ -7,6 +7,7 @@
 //
 
 #import "RgMBViewController.h"
+#import "UIImageView+RgGIF.h"
 #import "RgLoadingController.h"
 
 @interface RgMBViewController ()
@@ -17,9 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [RgLoadingController showLoadingActivityViewOn:self];
+
+    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh" withAfter:2 withComplete:nil];
     
 }
+
 
 @end
