@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     _animationLayer = [CALayer layer];
-    _animationLayer.frame = CGRectMake(20, 150, 60, 60);
+    _animationLayer.frame = CGRectMake(80, 150, 40, 40);
     _animationLayer.backgroundColor = [UIColor orangeColor].CGColor;
     [self.view.layer addSublayer:_animationLayer];
     
@@ -32,24 +32,25 @@
 }
 
 - (void)action1 {
-
-//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-//    animation.toValue = [NSNumber numberWithFloat:(2 * M_PI) * 3];
-//    animation.duration = 2;
-//    
-//    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"position"];
-//    animation1.fromValue = [NSValue valueWithCGRect:CGRectMake(20, 150, 60, 60)];
-//    animation1.toValue = [NSValue valueWithCGRect:CGRectMake(120, 150, 60, 60)];
-//    animation1.duration = 2;
-//
-//    [_animationLayer addAnimation:animation forKey:nil];
-//    [_animationLayer addAnimation:animation1 forKey:nil];
-
-    UILocalNotification *notification= [[UILocalNotification alloc] init];
-    notification.alertBody = @"提示闹钟";
-    NSDictionary* info = [NSDictionary dictionaryWithObject:@"没事儿" forKey:@"haha"];
     
-    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    CGMutablePathRef path = CGPathCreateMutable();
+    pathAnimation.calculationMode = kCAAnimationPaced;
+    pathAnimation.fillMode = kCAFillModeForwards;
+    pathAnimation.removedOnCompletion = NO;
+    pathAnimation.duration = 2;
+    CGPathMoveToPoint(path, NULL, 100, 230);
+    CGPathAddArc(path, NULL, 100, 170, 60,  M_PI / 4.0, M_PI / 2.0, YES);
+    pathAnimation.path = path;
+    CGPathRelease(path);
+    
+    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    animation1.fromValue = @1;
+    animation1.toValue = @3;
+    animation1.duration = 2;
+
+    [_animationLayer addAnimation:pathAnimation forKey:nil];
+    [_animationLayer addAnimation:animation1 forKey:nil];
     
 }
 

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rg Story View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RgStoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-9P-Qwa">
+                                <rect key="frame" x="120" y="100" width="360" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.21748692606092634" blue="0.19309916545098238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="try-cG-u92"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchRedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmd-tn-gU7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-wX-qAL">
+                                <rect key="frame" x="70" y="170" width="460" height="40"/>
+                                <color key="backgroundColor" red="0.22683001383206225" green="1" blue="0.51497752839492128" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a7B-RV-a6z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchGreenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oy0-jq-GWL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dBu-9P-Qwa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="66j-QU-E4l"/>
+                            <constraint firstItem="dBu-9P-Qwa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="9P0-kP-rN7"/>
+                            <constraint firstItem="gvJ-wX-qAL" firstAttribute="top" secondItem="dBu-9P-Qwa" secondAttribute="bottom" constant="20" id="DS8-W9-lyg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dBu-9P-Qwa" secondAttribute="trailing" constant="100" id="akv-Cc-Ccj"/>
+                            <constraint firstItem="gvJ-wX-qAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="eWT-eY-8eq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gvJ-wX-qAL" secondAttribute="trailing" constant="50" id="uRP-Kj-wTs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenButton" destination="gvJ-wX-qAL" id="WNx-oj-5Sr"/>
+                        <outlet property="redButton" destination="dBu-9P-Qwa" id="K3b-KF-tna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

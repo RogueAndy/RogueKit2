@@ -31,6 +31,7 @@
 		82718C0E1C8D539900B582CA /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C0D1C8D539900B582CA /* RogueCollectViewItem.m */; };
 		82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C101C8D5B3400B582CA /* RgCollectViewController1.m */; };
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
+		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
 		82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DA1C5F3618009B69F4 /* Alamofire.framework */; };
 		82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DC1C5F362A009B69F4 /* SnapKit.framework */; };
 		82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */; };
@@ -97,6 +98,8 @@
 		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
 		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
 		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
+		82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgStoryViewController.h; sourceTree = "<group>"; };
+		82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgStoryViewController.m; sourceTree = "<group>"; };
 		82EA15DA1C5F3618009B69F4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		82EA15DC1C5F362A009B69F4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */,
 				82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */,
 				82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */,
+				82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */,
+				82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */,
 			);
 			name = ViewControllers;
 			path = ../../../RogueKit/ViewControllers;
@@ -463,6 +468,7 @@
 				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
 				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
 				82718C0B1C8D535300B582CA /* RogueCollectView.m in Sources */,
+				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */,
 				823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */,
@@ -713,6 +719,7 @@
 				82EDC5F41C9A86DB00E574CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
