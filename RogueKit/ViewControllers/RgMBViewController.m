@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh" withAfter:2 withComplete:nil];
+    [RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh"];
     
 }
 
