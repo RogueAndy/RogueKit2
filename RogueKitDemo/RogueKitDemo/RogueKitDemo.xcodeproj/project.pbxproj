@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */; };
+		820EC8C91C3E4A3F00B39563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8C81C3E4A3F00B39563 /* main.m */; };
+		820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */; };
+		820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CE1C3E4A3F00B39563 /* ViewController.m */; };
+		820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D01C3E4A3F00B39563 /* Main.storyboard */; };
+		820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D31C3E4A3F00B39563 /* Assets.xcassets */; };
+		820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */; };
+		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
+		8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */; };
+		823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A81C4E349D00AEDA91 /* RogueCache.m */; };
+		823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */; };
+		823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */; };
+		823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */; };
+		823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */; };
+		823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */; };
+		823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45CA1C520B7400AEDA91 /* RgTextField.m */; };
+		82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C031C8960DA00B582CA /* RgCollectViewController.swift */; };
+		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
+		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
+		82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C101C8D5B3400B582CA /* RgCollectViewController1.m */; };
+		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
+		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
+		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
+		82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8121CA229BC00458760 /* RogueCollectView.m */; };
+		82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */; };
+		82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8161CA229BC00458760 /* RogueViewController.m */; };
+		82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB81B1CA2300800458760 /* RogueUserObject.m */; };
+		82C06F711C9FCC5B00371B09 /* RgMBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F701C9FCC5B00371B09 /* RgMBViewController.m */; };
+		82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C06F751C9FD26100371B09 /* ImageIO.framework */; };
+		82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */; };
+		82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */; };
+		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
+		82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DA1C5F3618009B69F4 /* Alamofire.framework */; };
+		82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DC1C5F362A009B69F4 /* SnapKit.framework */; };
+		82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */; };
+		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
+		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
+		82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */; };
+		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
+		82EDC5EE1C9A86DB00E574CD /* RogueKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */; };
+		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
+		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
+		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		827DF2B41CA25DE6001F9F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820EC8BC1C3E4A3F00B39563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820EC8C31C3E4A3F00B39563;
+			remoteInfo = RogueKitDemo;
+		};
+		82EDC5F01C9A86DB00E574CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820EC8BC1C3E4A3F00B39563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820EC8C31C3E4A3F00B39563;
+			remoteInfo = RogueKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RogueKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogueKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820EC8C81C3E4A3F00B39563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		820EC8CD1C3E4A3F00B39563 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		820EC8CE1C3E4A3F00B39563 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		820EC8D11C3E4A3F00B39563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		820EC8D31C3E4A3F00B39563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		820EC8D61C3E4A3F00B39563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		820EC8D81C3E4A3F00B39563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820EC8DF1C3E52B200B39563 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
+		820EC8E01C3E52B200B39563 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
+		8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftOptionalViewController.swift; sourceTree = "<group>"; };
+		823E45A71C4E349D00AEDA91 /* RogueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueCache.h; sourceTree = "<group>"; };
+		823E45A81C4E349D00AEDA91 /* RogueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCache.m; sourceTree = "<group>"; };
+		823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewControllerTranstion.h; sourceTree = "<group>"; };
+		823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueViewControllerTranstion.m; sourceTree = "<group>"; };
+		823E45B61C50BE4D00AEDA91 /* RogueNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueNetWorkViewController.h; sourceTree = "<group>"; };
+		823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueNetWorkViewController.m; sourceTree = "<group>"; };
+		823E45BA1C52093400AEDA91 /* RogueBaseViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueBaseViewContorller.h; sourceTree = "<group>"; };
+		823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueBaseViewContorller.m; sourceTree = "<group>"; };
+		823E45BD1C52094A00AEDA91 /* RgLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoginViewController.h; sourceTree = "<group>"; };
+		823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoginViewController.m; sourceTree = "<group>"; };
+		823E45C01C520AF000AEDA91 /* RgRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRegisterViewController.h; sourceTree = "<group>"; };
+		823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRegisterViewController.m; sourceTree = "<group>"; };
+		823E45C91C520B7400AEDA91 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
+		823E45CA1C520B7400AEDA91 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
+		82718C031C8960DA00B582CA /* RgCollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewController.swift; sourceTree = "<group>"; };
+		82718C051C8961B200B582CA /* RgCollectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectView.swift; sourceTree = "<group>"; };
+		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
+		82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgCollectViewController1.h; sourceTree = "<group>"; };
+		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
+		827DF2A81CA23F0F001F9F30 /* RgUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUserObject.h; sourceTree = "<group>"; };
+		827DF2A91CA23F0F001F9F30 /* RgUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUserObject.m; sourceTree = "<group>"; };
+		827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests22.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RogueKitDemoTests22.m; sourceTree = "<group>"; };
+		827DF2B31CA25DE6001F9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
+		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
+		82BCB8111CA229BC00458760 /* RogueCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectView.h; path = ../RogueCollectView.h; sourceTree = "<group>"; };
+		82BCB8121CA229BC00458760 /* RogueCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueCollectView.m; path = ../RogueCollectView.m; sourceTree = "<group>"; };
+		82BCB8131CA229BC00458760 /* RogueCollectViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectViewItem.h; path = ../RogueCollectViewItem.h; sourceTree = "<group>"; };
+		82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueCollectViewItem.m; path = ../RogueCollectViewItem.m; sourceTree = "<group>"; };
+		82BCB8151CA229BC00458760 /* RogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueViewController.h; path = ../RogueViewController.h; sourceTree = "<group>"; };
+		82BCB8161CA229BC00458760 /* RogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueViewController.m; path = ../RogueViewController.m; sourceTree = "<group>"; };
+		82BCB81A1CA2300800458760 /* RogueUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueUserObject.h; sourceTree = "<group>"; };
+		82BCB81B1CA2300800458760 /* RogueUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueUserObject.m; sourceTree = "<group>"; };
+		82C06F6F1C9FCC5B00371B09 /* RgMBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMBViewController.h; sourceTree = "<group>"; };
+		82C06F701C9FCC5B00371B09 /* RgMBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMBViewController.m; sourceTree = "<group>"; };
+		82C06F751C9FD26100371B09 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RgRefresh.gif; sourceTree = "<group>"; };
+		82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RgGIF.h"; sourceTree = "<group>"; };
+		82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RgGIF.m"; sourceTree = "<group>"; };
+		82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgStoryViewController.h; sourceTree = "<group>"; };
+		82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgStoryViewController.m; sourceTree = "<group>"; };
+		82EA15DA1C5F3618009B69F4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		82EA15DC1C5F362A009B69F4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftUpimageViewController.swift; sourceTree = "<group>"; };
+		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
+		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
+		82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RgFirstStoryboard.storyboard; sourceTree = "<group>"; };
+		82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgAsyncViewController.h; sourceTree = "<group>"; };
+		82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgAsyncViewController.m; sourceTree = "<group>"; };
+		82EDC5DF1C9A827D00E574CD /* RgNetWorkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgNetWorkObject.h; sourceTree = "<group>"; };
+		82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgNetWorkObject.m; sourceTree = "<group>"; };
+		82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RogueKitDemoTests.m; sourceTree = "<group>"; };
+		82EDC5EF1C9A86DB00E574CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F344F31C561D720068746D /* RgHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgHomeViewController.h; sourceTree = "<group>"; };
+		82F344F41C561D720068746D /* RgHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgHomeViewController.m; sourceTree = "<group>"; };
+		82F344F61C561D9F0068746D /* RgTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTabbarViewController.h; sourceTree = "<group>"; };
+		82F344F71C561D9F0068746D /* RgTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTabbarViewController.m; sourceTree = "<group>"; };
+		82F344F91C561DDC0068746D /* RgZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RgZoneViewController.h; path = TextFields/RgZoneViewController.h; sourceTree = "<group>"; };
+		82F344FA1C561DDC0068746D /* RgZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RgZoneViewController.m; path = TextFields/RgZoneViewController.m; sourceTree = "<group>"; };
+		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		820EC8C11C3E4A3F00B39563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */,
+				7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */,
+				82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827DF2AC1CA25DE3001F9F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC5E81C9A86DB00E574CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		820EC8BB1C3E4A3F00B39563 = {
+			isa = PBXGroup;
+			children = (
+				820EC8C61C3E4A3F00B39563 /* RogueKitDemo */,
+				82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */,
+				827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */,
+				820EC8C51C3E4A3F00B39563 /* Products */,
+				C30862CFCCFA93BC062D6886 /* Pods */,
+				EF6BD6B7373E0C5E8F4F29DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		820EC8C51C3E4A3F00B39563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */,
+				82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */,
+				827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		820EC8C61C3E4A3F00B39563 /* RogueKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5DE1C9A822E00E574CD /* 网络连接 */,
+				82EA15DE1C5F3637009B69F4 /* SwiftViews */,
+				823E45B91C52090900AEDA91 /* ViewControllers */,
+				820EC8DE1C3E52B200B39563 /* RogueKit */,
+				820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */,
+				820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */,
+				823E45B61C50BE4D00AEDA91 /* RogueNetWorkViewController.h */,
+				823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */,
+				820EC8CD1C3E4A3F00B39563 /* ViewController.h */,
+				820EC8CE1C3E4A3F00B39563 /* ViewController.m */,
+				820EC8D01C3E4A3F00B39563 /* Main.storyboard */,
+				820EC8D31C3E4A3F00B39563 /* Assets.xcassets */,
+				820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */,
+				82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */,
+				820EC8D81C3E4A3F00B39563 /* Info.plist */,
+				820EC8C71C3E4A3F00B39563 /* Supporting Files */,
+			);
+			path = RogueKitDemo;
+			sourceTree = "<group>";
+		};
+		820EC8C71C3E4A3F00B39563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				820EC8C81C3E4A3F00B39563 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
+			isa = PBXGroup;
+			children = (
+				82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */,
+				82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */,
+				82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */,
+				823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */,
+				823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */,
+				820EC8DF1C3E52B200B39563 /* RgLoadingController.h */,
+				820EC8E01C3E52B200B39563 /* RgLoadingController.m */,
+				823E45A71C4E349D00AEDA91 /* RogueCache.h */,
+				823E45A81C4E349D00AEDA91 /* RogueCache.m */,
+				82BCB81A1CA2300800458760 /* RogueUserObject.h */,
+				82BCB81B1CA2300800458760 /* RogueUserObject.m */,
+			);
+			name = RogueKit;
+			path = ../../../RogueKit;
+			sourceTree = "<group>";
+		};
+		823E45B91C52090900AEDA91 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
+				823E45C81C520B5C00AEDA91 /* TextFields */,
+				823E45BA1C52093400AEDA91 /* RogueBaseViewContorller.h */,
+				823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */,
+				823E45BD1C52094A00AEDA91 /* RgLoginViewController.h */,
+				823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */,
+				82F344F91C561DDC0068746D /* RgZoneViewController.h */,
+				82F344FA1C561DDC0068746D /* RgZoneViewController.m */,
+				823E45C01C520AF000AEDA91 /* RgRegisterViewController.h */,
+				823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */,
+				82F344F31C561D720068746D /* RgHomeViewController.h */,
+				82F344F41C561D720068746D /* RgHomeViewController.m */,
+				82F344F61C561D9F0068746D /* RgTabbarViewController.h */,
+				82F344F71C561D9F0068746D /* RgTabbarViewController.m */,
+				82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */,
+				82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */,
+				82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */,
+				82718C101C8D5B3400B582CA /* RgCollectViewController1.m */,
+				82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */,
+				82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */,
+				82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */,
+				82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */,
+				82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */,
+				82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */,
+				82C06F6F1C9FCC5B00371B09 /* RgMBViewController.h */,
+				82C06F701C9FCC5B00371B09 /* RgMBViewController.m */,
+			);
+			name = ViewControllers;
+			path = ../../../RogueKit/ViewControllers;
+			sourceTree = "<group>";
+		};
+		823E45C81C520B5C00AEDA91 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				82BCB8111CA229BC00458760 /* RogueCollectView.h */,
+				82BCB8121CA229BC00458760 /* RogueCollectView.m */,
+				82BCB8131CA229BC00458760 /* RogueCollectViewItem.h */,
+				82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */,
+				82BCB8151CA229BC00458760 /* RogueViewController.h */,
+				82BCB8161CA229BC00458760 /* RogueViewController.m */,
+				823E45C91C520B7400AEDA91 /* RgTextField.h */,
+				823E45CA1C520B7400AEDA91 /* RgTextField.m */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */ = {
+			isa = PBXGroup;
+			children = (
+				827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */,
+				827DF2B31CA25DE6001F9F30 /* Info.plist */,
+			);
+			path = RogueKitDemoTests22;
+			sourceTree = "<group>";
+		};
+		82EA15DE1C5F3637009B69F4 /* SwiftViews */ = {
+			isa = PBXGroup;
+			children = (
+				82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */,
+				8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */,
+				82718C031C8960DA00B582CA /* RgCollectViewController.swift */,
+				82718C051C8961B200B582CA /* RgCollectView.swift */,
+				82718C071C89637600B582CA /* RgCollectViewItem.swift */,
+			);
+			path = SwiftViews;
+			sourceTree = "<group>";
+		};
+		82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */,
+				827DF2A81CA23F0F001F9F30 /* RgUserObject.h */,
+				827DF2A91CA23F0F001F9F30 /* RgUserObject.m */,
+			);
+			path = StoryBoardViewController;
+			sourceTree = "<group>";
+		};
+		82EDC5DE1C9A822E00E574CD /* 网络连接 */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5DF1C9A827D00E574CD /* RgNetWorkObject.h */,
+				82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */,
+			);
+			path = "网络连接";
+			sourceTree = "<group>";
+		};
+		82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */,
+				82EDC5EF1C9A86DB00E574CD /* Info.plist */,
+			);
+			path = RogueKitDemoTests;
+			sourceTree = "<group>";
+		};
+		C30862CFCCFA93BC062D6886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */,
+				B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF6BD6B7373E0C5E8F4F29DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82C06F751C9FD26100371B09 /* ImageIO.framework */,
+				82EA15DC1C5F362A009B69F4 /* SnapKit.framework */,
+				82EA15DA1C5F3618009B69F4 /* Alamofire.framework */,
+				51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		820EC8C31C3E4A3F00B39563 /* RogueKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820EC8DB1C3E4A3F00B39563 /* Build configuration list for PBXNativeTarget "RogueKitDemo" */;
+			buildPhases = (
+				54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */,
+				820EC8C01C3E4A3F00B39563 /* Sources */,
+				820EC8C11C3E4A3F00B39563 /* Frameworks */,
+				820EC8C21C3E4A3F00B39563 /* Resources */,
+				8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */,
+				3050FE6244ADF762BEC3D285 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RogueKitDemo;
+			productName = RogueKitDemo;
+			productReference = 820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		827DF2AE1CA25DE3001F9F30 /* RogueKitDemoTests22 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827DF2B61CA25DE6001F9F30 /* Build configuration list for PBXNativeTarget "RogueKitDemoTests22" */;
+			buildPhases = (
+				827DF2AB1CA25DE3001F9F30 /* Sources */,
+				827DF2AC1CA25DE3001F9F30 /* Frameworks */,
+				827DF2AD1CA25DE3001F9F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				827DF2B51CA25DE6001F9F30 /* PBXTargetDependency */,
+			);
+			name = RogueKitDemoTests22;
+			productName = RogueKitDemoTests22;
+			productReference = 827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */;
+			buildPhases = (
+				82EDC5E71C9A86DB00E574CD /* Sources */,
+				82EDC5E81C9A86DB00E574CD /* Frameworks */,
+				82EDC5E91C9A86DB00E574CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EDC5F11C9A86DB00E574CD /* PBXTargetDependency */,
+			);
+			name = RogueKitDemoTests;
+			productName = RogueKitDemoTests;
+			productReference = 82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		820EC8BC1C3E4A3F00B39563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Rogue;
+				TargetAttributes = {
+					820EC8C31C3E4A3F00B39563 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					827DF2AE1CA25DE3001F9F30 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 820EC8C31C3E4A3F00B39563;
+					};
+					82EDC5EA1C9A86DB00E574CD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 820EC8C31C3E4A3F00B39563;
+					};
+				};
+			};
+			buildConfigurationList = 820EC8BF1C3E4A3F00B39563 /* Build configuration list for PBXProject "RogueKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 820EC8BB1C3E4A3F00B39563;
+			productRefGroup = 820EC8C51C3E4A3F00B39563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				820EC8C31C3E4A3F00B39563 /* RogueKitDemo */,
+				82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */,
+				827DF2AE1CA25DE3001F9F30 /* RogueKitDemoTests22 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		820EC8C21C3E4A3F00B39563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */,
+				820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */,
+				82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */,
+				820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */,
+				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827DF2AD1CA25DE3001F9F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC5E91C9A86DB00E574CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3050FE6244ADF762BEC3D285 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		820EC8C01C3E4A3F00B39563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
+				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
+				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
+				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
+				82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */,
+				8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */,
+				823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */,
+				82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */,
+				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
+				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
+				82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */,
+				82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */,
+				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
+				82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */,
+				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
+				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
+				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
+				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
+				82C06F711C9FCC5B00371B09 /* RgMBViewController.m in Sources */,
+				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
+				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
+				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
+				82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */,
+				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
+				827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */,
+				82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */,
+				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
+				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
+				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
+				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
+				82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */,
+				823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827DF2AB1CA25DE3001F9F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC5E71C9A86DB00E574CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC5EE1C9A86DB00E574CD /* RogueKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		827DF2B51CA25DE6001F9F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820EC8C31C3E4A3F00B39563 /* RogueKitDemo */;
+			targetProxy = 827DF2B41CA25DE6001F9F30 /* PBXContainerItemProxy */;
+		};
+		82EDC5F11C9A86DB00E574CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820EC8C31C3E4A3F00B39563 /* RogueKitDemo */;
+			targetProxy = 82EDC5F01C9A86DB00E574CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		820EC8D01C3E4A3F00B39563 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820EC8D11C3E4A3F00B39563 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820EC8D61C3E4A3F00B39563 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		820EC8D91C3E4A3F00B39563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		820EC8DA1C3E4A3F00B39563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820EC8DC1C3E4A3F00B39563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RogueKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RogueKitDemo/SwiftViews/RogueKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		820EC8DD1C3E4A3F00B39563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RogueKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RogueKitDemo/SwiftViews/RogueKitDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		827DF2B71CA25DE6001F9F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RogueKitDemoTests22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Debug;
+		};
+		827DF2B81CA25DE6001F9F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RogueKitDemoTests22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Release;
+		};
+		82EDC5F31C9A86DB00E574CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RogueKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Debug;
+		};
+		82EDC5F41C9A86DB00E574CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RogueKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		820EC8BF1C3E4A3F00B39563 /* Build configuration list for PBXProject "RogueKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820EC8D91C3E4A3F00B39563 /* Debug */,
+				820EC8DA1C3E4A3F00B39563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820EC8DB1C3E4A3F00B39563 /* Build configuration list for PBXNativeTarget "RogueKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820EC8DC1C3E4A3F00B39563 /* Debug */,
+				820EC8DD1C3E4A3F00B39563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		827DF2B61CA25DE6001F9F30 /* Build configuration list for PBXNativeTarget "RogueKitDemoTests22" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827DF2B71CA25DE6001F9F30 /* Debug */,
+				827DF2B81CA25DE6001F9F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EDC5F31C9A86DB00E574CD /* Debug */,
+				82EDC5F41C9A86DB00E574CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 820EC8BC1C3E4A3F00B39563 /* Project object */;
+}

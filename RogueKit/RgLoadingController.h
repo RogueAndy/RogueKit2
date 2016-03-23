@@ -7,6 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+
+typedef NS_ENUM(NSInteger, RgLoadingType)
+{
+
+    RgLoadingDefault     = 0,
+    RgLoadingGIF         = 1
+
+};
 
 @interface RgLoadingController : UIViewController
 
@@ -17,14 +26,6 @@
  */
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController;
-
-/**
- *  隐藏句话
- *
- *  @param onViewController 某个控制器
- */
-
-+ (void)hideLoadingActivityViewOn:(UIViewController *)onViewController;
 
 /**
  *  用户提示
@@ -45,5 +46,46 @@
  */
 
 + (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController withTitle:(NSString *)title withAfter:(CGFloat)after withComplete:(void(^)(void))completeBlock;
+
+/***********************************************  以上方法废弃，默认使用菊花  *******************************************************/
+
+/**
+ *  显示菊花
+ *
+ *  @param onViewController 在具体的控制器上
+ *  @param type             普通类型还是 GIF 动图类型
+ */
+
++ (void)showLoadingActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type;
+
+/**
+ *  显示菊花
+ *
+ *  @param onViewController 在具体的控制器上
+ *  @param type             普通类型还是 GIF 动图类型
+ *  @param parameter        如果是普通类型，则代表文本，如果是 gif 类型则代表 gif 动图名称
+ */
+
++ (void)showLoadingActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type titleOrGif:(NSString *)parameter;
+
+/**
+ *  显示菊花
+ *
+ *  @param onViewController 在具体的控制器上
+ *  @param type             普通类型还是 GIF 动图类型
+ *  @param parameter        如果是普通类型，则代表文本，如果是 gif 类型则代表 gif 动图名称
+ *  @param after            设置自动消失结束所需要的时间
+ *  @param completeBlock    完成后所执行的 闭包 方法
+ */
+
++ (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type titleOrGif:(NSString *)parameter withAfter:(CGFloat)after withComplete:(void(^)(void))completeBlock;
+
+/**
+ *  隐藏句话
+ *
+ *  @param onViewController 某个控制器
+ */
+
++ (void)hideLoadingActivityViewOn:(UIViewController *)onViewController;
 
 @end
