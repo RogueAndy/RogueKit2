@@ -21,6 +21,15 @@
 
     [RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF titleOrGif:@"RgRefresh"];
     
+    NSString *hanzi = @"中国大地";
+    NSMutableString *ms = [[NSMutableString alloc] initWithString:hanzi];
+    if(CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformMandarinLatin, NO)) {
+        NSLog(@"%@", ms);
+    }
+    if(CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformStripDiacritics, NO)) {
+        NSLog(@"%@", ms);
+    }
+    
 }
 
 
