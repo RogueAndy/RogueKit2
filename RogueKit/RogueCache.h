@@ -33,7 +33,7 @@
  *  @param user 用户缓存信息
  */
 
-+ (void)setSessionValues:(nonnull RogueUserObject *)user;
++ (void)setSessionValues:(nullable RogueUserObject *)user;
 
 /**
  *  取出内存缓存
@@ -41,7 +41,7 @@
  *  @return 取出缓存值
  */
 
-+ (nonnull RogueUserObject *)getSessionValues;
++ (nullable RogueUserObject *)getSessionValues;
 
 /**
  *  更新用户信息，从而促发通知效果
@@ -49,6 +49,8 @@
  *  @param user 用户信息
  */
 
-+ (void)refreshUserSession:(nonnull RogueUserObject *)user;
++ (void)refreshUserSession:(nullable RogueUserObject *)user;
+
++ (void)notificationResponseWithBlock:(nonnull void (^)(NSString * _Nonnull key))response;
 
 @end

@@ -27,6 +27,8 @@
 		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
 		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
 		82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C101C8D5B3400B582CA /* RgCollectViewController1.m */; };
+		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
+		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
 		82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8121CA229BC00458760 /* RogueCollectView.m */; };
 		82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */; };
@@ -51,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		827DF2B41CA25DE6001F9F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820EC8BC1C3E4A3F00B39563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820EC8C31C3E4A3F00B39563;
+			remoteInfo = RogueKitDemo;
+		};
 		82EDC5F01C9A86DB00E574CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 820EC8BC1C3E4A3F00B39563 /* Project object */;
@@ -95,6 +104,11 @@
 		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
 		82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgCollectViewController1.h; sourceTree = "<group>"; };
 		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
+		827DF2A81CA23F0F001F9F30 /* RgUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUserObject.h; sourceTree = "<group>"; };
+		827DF2A91CA23F0F001F9F30 /* RgUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUserObject.m; sourceTree = "<group>"; };
+		827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests22.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RogueKitDemoTests22.m; sourceTree = "<group>"; };
+		827DF2B31CA25DE6001F9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
 		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
 		82BCB8111CA229BC00458760 /* RogueCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectView.h; path = ../RogueCollectView.h; sourceTree = "<group>"; };
@@ -147,6 +161,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		827DF2AC1CA25DE3001F9F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82EDC5E81C9A86DB00E574CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +184,7 @@
 			children = (
 				820EC8C61C3E4A3F00B39563 /* RogueKitDemo */,
 				82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */,
+				827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */,
 				820EC8C51C3E4A3F00B39563 /* Products */,
 				C30862CFCCFA93BC062D6886 /* Pods */,
 				EF6BD6B7373E0C5E8F4F29DA /* Frameworks */,
@@ -174,6 +196,7 @@
 			children = (
 				820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */,
 				82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */,
+				827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +300,15 @@
 			path = TextFields;
 			sourceTree = "<group>";
 		};
+		827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */ = {
+			isa = PBXGroup;
+			children = (
+				827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */,
+				827DF2B31CA25DE6001F9F30 /* Info.plist */,
+			);
+			path = RogueKitDemoTests22;
+			sourceTree = "<group>";
+		};
 		82EA15DE1C5F3637009B69F4 /* SwiftViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */,
+				827DF2A81CA23F0F001F9F30 /* RgUserObject.h */,
+				827DF2A91CA23F0F001F9F30 /* RgUserObject.m */,
 			);
 			path = StoryBoardViewController;
 			sourceTree = "<group>";
@@ -358,6 +392,24 @@
 			productReference = 820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		827DF2AE1CA25DE3001F9F30 /* RogueKitDemoTests22 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827DF2B61CA25DE6001F9F30 /* Build configuration list for PBXNativeTarget "RogueKitDemoTests22" */;
+			buildPhases = (
+				827DF2AB1CA25DE3001F9F30 /* Sources */,
+				827DF2AC1CA25DE3001F9F30 /* Frameworks */,
+				827DF2AD1CA25DE3001F9F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				827DF2B51CA25DE6001F9F30 /* PBXTargetDependency */,
+			);
+			name = RogueKitDemoTests22;
+			productName = RogueKitDemoTests22;
+			productReference = 827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */;
@@ -388,6 +440,10 @@
 					820EC8C31C3E4A3F00B39563 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					827DF2AE1CA25DE3001F9F30 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 820EC8C31C3E4A3F00B39563;
+					};
 					82EDC5EA1C9A86DB00E574CD = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 820EC8C31C3E4A3F00B39563;
@@ -409,6 +465,7 @@
 			targets = (
 				820EC8C31C3E4A3F00B39563 /* RogueKitDemo */,
 				82EDC5EA1C9A86DB00E574CD /* RogueKitDemoTests */,
+				827DF2AE1CA25DE3001F9F30 /* RogueKitDemoTests22 */,
 			);
 		};
 /* End PBXProject section */
@@ -423,6 +480,13 @@
 				82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */,
 				820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */,
 				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827DF2AD1CA25DE3001F9F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +576,7 @@
 				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
 				82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
+				827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */,
 				82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
@@ -519,6 +584,14 @@
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */,
 				823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827DF2AB1CA25DE3001F9F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +606,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		827DF2B51CA25DE6001F9F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820EC8C31C3E4A3F00B39563 /* RogueKitDemo */;
+			targetProxy = 827DF2B41CA25DE6001F9F30 /* PBXContainerItemProxy */;
+		};
 		82EDC5F11C9A86DB00E574CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 820EC8C31C3E4A3F00B39563 /* RogueKitDemo */;
@@ -693,6 +771,34 @@
 			};
 			name = Release;
 		};
+		827DF2B71CA25DE6001F9F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RogueKitDemoTests22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Debug;
+		};
+		827DF2B81CA25DE6001F9F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RogueKitDemoTests22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemoTests22;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogueKitDemo.app/RogueKitDemo";
+			};
+			name = Release;
+		};
 		82EDC5F31C9A86DB00E574CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,6 +843,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		827DF2B61CA25DE6001F9F30 /* Build configuration list for PBXNativeTarget "RogueKitDemoTests22" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827DF2B71CA25DE6001F9F30 /* Debug */,
+				827DF2B81CA25DE6001F9F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */ = {
 			isa = XCConfigurationList;

@@ -13,6 +13,9 @@ static RogueCache *rogueCache = nil;
 NSString *const RogueCacheGlobalUpdateUserNotification = @"RogueCacheGlobalUpdateUserNotification";
 NSString *const RogueCacheUserSessionKey = @"RogueCacheUserSessionKey";
 
+@interface RogueCache()
+
+@end
 
 @implementation RogueCache
 
@@ -44,9 +47,9 @@ NSString *const RogueCacheUserSessionKey = @"RogueCacheUserSessionKey";
 }
 
 - (void)privateSetObject:(nullable id)values forKey:(nonnull NSString *)key {
-
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:values forKey:key];
+    [defaults setObject:(values ? [NSKeyedArchiver archivedDataWithRootObject:values] : nil) forKey:key];
     [defaults synchronize];
     
 }
@@ -54,17 +57,27 @@ NSString *const RogueCacheUserSessionKey = @"RogueCacheUserSessionKey";
 - (nonnull id)privateObjectForKey:(nonnull NSString *)key {
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:key];
+    RogueUserObject *user = [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:key]];
+    return user;
 
 }
 
-#pragma mark - 通知消息机制
+
+#pragma mark - 更新session的缓存，促发通知消息机制
 
 + (void)refreshUserSession:(RogueUserObject *)user {
 
     [self setSessionValues:user];
-    [[NSNotificationCenter defaultCenter] postNotificationName:RogueCacheGlobalUpdateUserNotification object:[self shareInstance] userInfo:@{RogueCacheUserSessionKey: [self getSessionValues]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:RogueCacheGlobalUpdateUserNotification object:[self shareInstance] userInfo:([self getSessionValues] ? @{RogueCacheUserSessionKey: [self getSessionValues]} : nil)];
 
 }
+
++ (void)notificationResponseWithBlock:(void (^)(NSString * _Nonnull key))response {
+
+    response(RogueCacheGlobalUpdateUserNotification);
+
+}
+
+
 
 @end

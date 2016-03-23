@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RogueUserObject : NSObject
+/**
+ *  基础类，必须继承与该类
+ */
+
+@interface RogueUserObject : NSObject<NSCoding>
 
 @end

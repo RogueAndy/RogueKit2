@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RogueKitDemoTests22.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>820EC8C31C3E4A3F00B39563</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>827DF2AE1CA25DE3001F9F30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
