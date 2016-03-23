@@ -1,2 +1,2 @@
-github "SnapKit/SnapKit" >= 0.15.0
-github "Alamofire/Alamofire" ~> 3.0
+github "SnapKit/SnapKit" >= 0.19.1
+github "Alamofire/Alamofire" ~> 3.2.1

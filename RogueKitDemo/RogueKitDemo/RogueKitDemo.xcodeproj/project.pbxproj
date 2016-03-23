@@ -382,6 +382,7 @@
 				820EC8C21C3E4A3F00B39563 /* Resources */,
 				8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */,
 				3050FE6244ADF762BEC3D285 /* Copy Pods Resources */,
+				824CFF3A1CA28F6E004E3547 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -529,6 +530,21 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		824CFF3A1CA28F6E004E3547 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -851,6 +867,7 @@
 				827DF2B81CA25DE6001F9F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82EDC5F21C9A86DB00E574CD /* Build configuration list for PBXNativeTarget "RogueKitDemoTests" */ = {
 			isa = XCConfigurationList;
