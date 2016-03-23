@@ -10,7 +10,16 @@
 
 static RogueCache *rogueCache = nil;
 
+/**
+ *  通知使用的名字
+ */
+
 NSString *const RogueCacheGlobalUpdateUserNotification = @"RogueCacheGlobalUpdateUserNotification";
+
+/**
+ *  这是缓存在 NSUserDefaults 中的键值对应的键，用其取出对应的缓存值
+ */
+
 NSString *const RogueCacheUserSessionKey = @"RogueCacheUserSessionKey";
 
 @interface RogueCache()
@@ -71,6 +80,8 @@ NSString *const RogueCacheUserSessionKey = @"RogueCacheUserSessionKey";
     [[NSNotificationCenter defaultCenter] postNotificationName:RogueCacheGlobalUpdateUserNotification object:[self shareInstance] userInfo:([self getSessionValues] ? @{RogueCacheUserSessionKey: [self getSessionValues]} : nil)];
 
 }
+
+#pragma mark - 调用该方法时，回调 [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(changeOther:) name:key object:nil]
 
 + (void)notificationResponseWithBlock:(void (^)(NSString * _Nonnull key))response {
 
