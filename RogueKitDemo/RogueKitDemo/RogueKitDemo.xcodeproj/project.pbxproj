@@ -23,6 +23,7 @@
 		823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */; };
 		823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */; };
 		823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45CA1C520B7400AEDA91 /* RgTextField.m */; };
+		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C031C8960DA00B582CA /* RgCollectViewController.swift */; };
 		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
 		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
@@ -99,6 +100,8 @@
 		823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRegisterViewController.m; sourceTree = "<group>"; };
 		823E45C91C520B7400AEDA91 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
 		823E45CA1C520B7400AEDA91 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
+		824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgWebViewController.h; sourceTree = "<group>"; };
+		824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgWebViewController.m; sourceTree = "<group>"; };
 		82718C031C8960DA00B582CA /* RgCollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewController.swift; sourceTree = "<group>"; };
 		82718C051C8961B200B582CA /* RgCollectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectView.swift; sourceTree = "<group>"; };
 		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 				82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */,
 				82C06F6F1C9FCC5B00371B09 /* RgMBViewController.h */,
 				82C06F701C9FCC5B00371B09 /* RgMBViewController.m */,
+				824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */,
+				824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */,
 			);
 			name = ViewControllers;
 			path = ../../../RogueKit/ViewControllers;
@@ -583,6 +588,7 @@
 				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
 				82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */,
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
+				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,

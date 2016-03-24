@@ -11,6 +11,7 @@
 #import "RgLoadingController.h"
 #import "RogueCache.h"
 #import "RgUserObject.h"
+#import "RgWebViewController.h"
 
 @interface RgMBViewController ()
 
@@ -50,10 +51,12 @@
 
 - (void)addAction {
 
-    RgUserObject *dd = [RgUserObject new];
-    dd.userName = @"哈哈哈";
-    dd.cards = @[@"11", @"22", @"33"];
-    [RogueCache setSessionValues:dd];
+//    RgUserObject *dd = [RgUserObject new];
+//    dd.userName = @"哈哈哈";
+//    dd.cards = @[@"11", @"22", @"33"];
+//    [RogueCache setSessionValues:dd];
+    
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:[RgWebViewController initWithModel:nil]] animated:YES completion:nil];
     
 }
 
