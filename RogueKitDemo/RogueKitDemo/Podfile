@@ -10,6 +10,8 @@ pod 'MBProgressHUD'
 pod 'AFNetworking'
 pod 'AsyncDisplayKit'
 pod 'TOWebViewController'
+pod 'UICKeyChainStore'
+pod 'FMDBMigrationManager'
 
 end
 

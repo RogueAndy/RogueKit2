@@ -24,6 +24,10 @@
 		823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */; };
 		823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45CA1C520B7400AEDA91 /* RgTextField.m */; };
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
+		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
+		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
+		824CFF8D1CA3C72C004E3547 /* RgFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */; };
+		824CFF901CA3CD59004E3547 /* RgFMDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */; };
 		82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C031C8960DA00B582CA /* RgCollectViewController.swift */; };
 		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
 		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
@@ -102,6 +106,14 @@
 		823E45CA1C520B7400AEDA91 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
 		824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgWebViewController.h; sourceTree = "<group>"; };
 		824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgWebViewController.m; sourceTree = "<group>"; };
+		824CFF7E1CA3B14C004E3547 /* RgKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainStore.h; sourceTree = "<group>"; };
+		824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainStore.m; sourceTree = "<group>"; };
+		824CFF811CA3B233004E3547 /* RgKeyChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainViewController.h; sourceTree = "<group>"; };
+		824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainViewController.m; sourceTree = "<group>"; };
+		824CFF8B1CA3C72C004E3547 /* RgFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgFMDBViewController.h; sourceTree = "<group>"; };
+		824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgFMDBViewController.m; sourceTree = "<group>"; };
+		824CFF8E1CA3CD59004E3547 /* RgFMDBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgFMDBObject.h; sourceTree = "<group>"; };
+		824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgFMDBObject.m; sourceTree = "<group>"; };
 		82718C031C8960DA00B582CA /* RgCollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewController.swift; sourceTree = "<group>"; };
 		82718C051C8961B200B582CA /* RgCollectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectView.swift; sourceTree = "<group>"; };
 		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
@@ -257,6 +269,8 @@
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				824CFF8A1CA3C62E004E3547 /* RGFMDB */,
+				824CFF7D1CA3B135004E3547 /* KeyChain */,
 				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
 				823E45C81C520B5C00AEDA91 /* TextFields */,
 				823E45BA1C52093400AEDA91 /* RogueBaseViewContorller.h */,
@@ -303,6 +317,28 @@
 				823E45CA1C520B7400AEDA91 /* RgTextField.m */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		824CFF7D1CA3B135004E3547 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				824CFF7E1CA3B14C004E3547 /* RgKeyChainStore.h */,
+				824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */,
+				824CFF811CA3B233004E3547 /* RgKeyChainViewController.h */,
+				824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		824CFF8A1CA3C62E004E3547 /* RGFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				824CFF8E1CA3CD59004E3547 /* RgFMDBObject.h */,
+				824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */,
+				824CFF8B1CA3C72C004E3547 /* RgFMDBViewController.h */,
+				824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */,
+			);
+			path = RGFMDB;
 			sourceTree = "<group>";
 		};
 		827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */ = {
@@ -574,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
+				824CFF901CA3CD59004E3547 /* RgFMDBObject.m in Sources */,
 				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
 				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
@@ -585,11 +622,13 @@
 				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
 				82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */,
 				82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */,
+				824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */,
 				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
 				82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */,
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
 				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
+				824CFF8D1CA3C72C004E3547 /* RgFMDBViewController.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
 				82C06F711C9FCC5B00371B09 /* RgMBViewController.m in Sources */,
@@ -604,6 +643,7 @@
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
+				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
 				82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */,
 				823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */,
 			);
