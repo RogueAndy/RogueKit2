@@ -14,24 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - AsyncDisplayKit (1.9.7):
-    - AsyncDisplayKit/PINRemoteImage (= 1.9.7)
-  - AsyncDisplayKit/ASDealloc2MainObject (1.9.7)
-  - AsyncDisplayKit/PINRemoteImage (1.9.7):
-    - AsyncDisplayKit/ASDealloc2MainObject
-    - PINRemoteImage/iOS (>= 2)
-  - FMDB/standard (2.6.2)
-  - FMDBMigrationManager (1.4.1):
-    - FMDBMigrationManager/System (= 1.4.1)
-  - FMDBMigrationManager/System (1.4.1):
-    - FMDB/standard (>= 2.3)
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
-  - PINCache (2.2.2)
-  - PINRemoteImage/Core (2.1.1):
-    - PINCache (>= 2.1)
-  - PINRemoteImage/iOS (2.1.1):
-    - PINRemoteImage/Core
   - TOWebViewController (2.2.3):
     - TOWebViewController/Core (= 2.2.3)
   - TOWebViewController/Core (2.2.3)
@@ -39,8 +23,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - AsyncDisplayKit
-  - FMDBMigrationManager
   - Masonry
   - MBProgressHUD
   - TOWebViewController
@@ -48,13 +30,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  AsyncDisplayKit: eb762d3bfd3896b2901909ebc24b54c97f32d43c
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
-  PINRemoteImage: 0c620b392a2a41a0a14f143107bbb0596f73dd23
   TOWebViewController: ca47b9aeefe66acb3353d197dc8270338540b116
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 

@@ -26,8 +26,6 @@
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
 		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
-		824CFF8D1CA3C72C004E3547 /* RgFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */; };
-		824CFF901CA3CD59004E3547 /* RgFMDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */; };
 		82718C041C8960DA00B582CA /* RgCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C031C8960DA00B582CA /* RgCollectViewController.swift */; };
 		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
 		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
@@ -39,7 +37,6 @@
 		82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */; };
 		82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8161CA229BC00458760 /* RogueViewController.m */; };
 		82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB81B1CA2300800458760 /* RogueUserObject.m */; };
-		82C06F711C9FCC5B00371B09 /* RgMBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F701C9FCC5B00371B09 /* RgMBViewController.m */; };
 		82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C06F751C9FD26100371B09 /* ImageIO.framework */; };
 		82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */; };
 		82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */; };
@@ -49,7 +46,6 @@
 		82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */; };
 		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
 		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
-		82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */; };
 		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
 		82EDC5EE1C9A86DB00E574CD /* RogueKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5ED1C9A86DB00E574CD /* RogueKitDemoTests.m */; };
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
@@ -110,10 +106,6 @@
 		824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainStore.m; sourceTree = "<group>"; };
 		824CFF811CA3B233004E3547 /* RgKeyChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainViewController.h; sourceTree = "<group>"; };
 		824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainViewController.m; sourceTree = "<group>"; };
-		824CFF8B1CA3C72C004E3547 /* RgFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgFMDBViewController.h; sourceTree = "<group>"; };
-		824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgFMDBViewController.m; sourceTree = "<group>"; };
-		824CFF8E1CA3CD59004E3547 /* RgFMDBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgFMDBObject.h; sourceTree = "<group>"; };
-		824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgFMDBObject.m; sourceTree = "<group>"; };
 		82718C031C8960DA00B582CA /* RgCollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewController.swift; sourceTree = "<group>"; };
 		82718C051C8961B200B582CA /* RgCollectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectView.swift; sourceTree = "<group>"; };
 		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
@@ -134,8 +126,6 @@
 		82BCB8161CA229BC00458760 /* RogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueViewController.m; path = ../RogueViewController.m; sourceTree = "<group>"; };
 		82BCB81A1CA2300800458760 /* RogueUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueUserObject.h; sourceTree = "<group>"; };
 		82BCB81B1CA2300800458760 /* RogueUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueUserObject.m; sourceTree = "<group>"; };
-		82C06F6F1C9FCC5B00371B09 /* RgMBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMBViewController.h; sourceTree = "<group>"; };
-		82C06F701C9FCC5B00371B09 /* RgMBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMBViewController.m; sourceTree = "<group>"; };
 		82C06F751C9FD26100371B09 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RgRefresh.gif; sourceTree = "<group>"; };
 		82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RgGIF.h"; sourceTree = "<group>"; };
@@ -149,8 +139,6 @@
 		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
 		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
 		82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RgFirstStoryboard.storyboard; sourceTree = "<group>"; };
-		82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgAsyncViewController.h; sourceTree = "<group>"; };
-		82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgAsyncViewController.m; sourceTree = "<group>"; };
 		82EDC5DF1C9A827D00E574CD /* RgNetWorkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgNetWorkObject.h; sourceTree = "<group>"; };
 		82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgNetWorkObject.m; sourceTree = "<group>"; };
 		82EDC5EB1C9A86DB00E574CD /* RogueKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,7 +257,6 @@
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				824CFF8A1CA3C62E004E3547 /* RGFMDB */,
 				824CFF7D1CA3B135004E3547 /* KeyChain */,
 				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
 				823E45C81C520B5C00AEDA91 /* TextFields */,
@@ -291,12 +278,8 @@
 				82718C101C8D5B3400B582CA /* RgCollectViewController1.m */,
 				82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */,
 				82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */,
-				82EDC5DB1C9A4ECC00E574CD /* RgAsyncViewController.h */,
-				82EDC5DC1C9A4ECC00E574CD /* RgAsyncViewController.m */,
 				82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */,
 				82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */,
-				82C06F6F1C9FCC5B00371B09 /* RgMBViewController.h */,
-				82C06F701C9FCC5B00371B09 /* RgMBViewController.m */,
 				824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */,
 				824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */,
 			);
@@ -328,17 +311,6 @@
 				824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */,
 			);
 			path = KeyChain;
-			sourceTree = "<group>";
-		};
-		824CFF8A1CA3C62E004E3547 /* RGFMDB */ = {
-			isa = PBXGroup;
-			children = (
-				824CFF8E1CA3CD59004E3547 /* RgFMDBObject.h */,
-				824CFF8F1CA3CD59004E3547 /* RgFMDBObject.m */,
-				824CFF8B1CA3C72C004E3547 /* RgFMDBViewController.h */,
-				824CFF8C1CA3C72C004E3547 /* RgFMDBViewController.m */,
-			);
-			path = RGFMDB;
 			sourceTree = "<group>";
 		};
 		827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */ = {
@@ -610,7 +582,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
-				824CFF901CA3CD59004E3547 /* RgFMDBObject.m in Sources */,
 				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
 				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
@@ -621,17 +592,14 @@
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
 				82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */,
-				82EDC5DD1C9A4ECC00E574CD /* RgAsyncViewController.m in Sources */,
 				824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */,
 				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
 				82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */,
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
 				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
-				824CFF8D1CA3C72C004E3547 /* RgFMDBViewController.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
-				82C06F711C9FCC5B00371B09 /* RgMBViewController.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
 				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
 				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
