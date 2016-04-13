@@ -8,10 +8,9 @@ target 'RogueKitDemo' do
 pod 'Masonry'
 pod 'MBProgressHUD'
 pod 'AFNetworking'
-pod 'AsyncDisplayKit'
 pod 'TOWebViewController'
 pod 'UICKeyChainStore'
-pod 'FMDBMigrationManager'
+
 
 end
 
