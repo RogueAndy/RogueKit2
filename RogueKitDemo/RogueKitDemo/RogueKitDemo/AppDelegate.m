@@ -15,7 +15,7 @@
 #import "RgUpimageViewController.h"
 #import "RgCollectViewController1.h"
 #import "RgLayerAnimationViewController.h"
-
+#import "RgRunTimeViewController.h"
 #import "RgNetWorkObject.h"
 #import "RgKeyChainViewController.h"
 
@@ -31,7 +31,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgRunTimeViewController new]];
 //    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];

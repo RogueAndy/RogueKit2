@@ -16,6 +16,7 @@
 		820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */; };
 		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
 		8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */; };
+		822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */; };
 		823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A81C4E349D00AEDA91 /* RogueCache.m */; };
 		823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */; };
 		823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */; };
@@ -89,6 +90,8 @@
 		820EC8DF1C3E52B200B39563 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
 		820EC8E01C3E52B200B39563 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
 		8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftOptionalViewController.swift; sourceTree = "<group>"; };
+		822C3F911CC8AE3400A7EE13 /* RgRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRunTimeViewController.h; sourceTree = "<group>"; };
+		822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRunTimeViewController.m; sourceTree = "<group>"; };
 		823E45A71C4E349D00AEDA91 /* RogueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueCache.h; sourceTree = "<group>"; };
 		823E45A81C4E349D00AEDA91 /* RogueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCache.m; sourceTree = "<group>"; };
 		823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewControllerTranstion.h; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */,
 				824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */,
 				824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */,
+				822C3F911CC8AE3400A7EE13 /* RgRunTimeViewController.h */,
+				822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */,
 			);
 			name = ViewControllers;
 			path = ../../../RogueKit/ViewControllers;
@@ -630,6 +635,7 @@
 				82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
+				822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */,
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
@@ -776,6 +782,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -802,6 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
