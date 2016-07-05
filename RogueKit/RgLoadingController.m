@@ -301,6 +301,77 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
     
 }
 
+#pragma mark - 使用图片数组生成帧动画
+
++ (void)showLoadingActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames {
+
+    __block MBProgressHUD *hud;
+    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[MBProgressHUD class]]) {
+            hud = (MBProgressHUD *)obj;
+        }
+    }];
+    if (hud == nil) {
+        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
+        [onViewController.view addSubview:hud];
+    }
+    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
+    UIImageView *gifImage = [[UIImageView alloc] init];
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    [imageNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [images addObject:[UIImage imageNamed:obj]];
+    }];
+    gifImage.animationImages = [images copy];
+    gifImage.animationRepeatCount = 0;
+    gifImage.animationDuration = timer;
+    gifImage.contentMode = UIViewContentModeScaleAspectFill;
+    gifImage.frame = CGRectMake(0, 0, 31, 31);
+    hud.minSize = CGSizeMake(80, 80);
+    gifImage.center = hud.center;
+    [gifImage startAnimating];
+    [hud addSubview:gifImage];
+    [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView imageView:gifImage];
+    
+}
+
++ (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames withAfter:(CGFloat)after withComplete:(void(^)(void))completeBlock {
+
+    __block MBProgressHUD *hud;
+    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[MBProgressHUD class]]) {
+            hud = (MBProgressHUD *)obj;
+        }
+    }];
+    if (hud == nil) {
+        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
+        [onViewController.view addSubview:hud];
+    }
+    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
+    UIImageView *gifImage = [[UIImageView alloc] init];
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    [imageNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [images addObject:[UIImage imageNamed:obj]];
+    }];
+    gifImage.animationImages = [images copy];
+    gifImage.animationRepeatCount = 0;
+    gifImage.animationDuration = timer;
+    gifImage.contentMode = UIViewContentModeScaleAspectFill;
+    gifImage.frame = CGRectMake(0, 0, 31, 31);
+    hud.minSize = CGSizeMake(80, 80);
+    gifImage.center = hud.center;
+    [gifImage startAnimating];
+    [hud addSubview:gifImage];
+    [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView imageView:gifImage];
+    
+    [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+
+}
+
+
+
+
+/***********************************************  动态方法  *******************************************************/
+
 - (instancetype)initWithHUD:(MBProgressHUD *)hud withTitle:(NSString *)title {
     self = [super init];
     if (self) {
@@ -327,14 +398,26 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
     self.hud.labelText = title;
 }
 
-- (void)showLoadingActivityView:(MBProgressHUDMode)mode{
+- (void)showLoadingActivityView:(MBProgressHUDMode)mode {
+    
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
     [_hud show:YES];
+    
+}
+
+- (void)showLoadingActivityView:(MBProgressHUDMode)mode imageView:(UIImageView *)imageView {
+
+    [_hud setMode:mode];
+    [self addToAllLoadingActivityViewControllers];
+    [_hud show:YES];
+    [imageView startAnimating];
+
 }
 
 
 - (void)hideLoadingActivityView:(CGFloat)after withComplete:(void(^)(void))completeBlock {
+    
     [_hud setRemoveFromSuperViewOnHide:YES];
     [_hud setMinShowTime:0.3];
     __weak RgLoadingController *weakSelf = self;
@@ -343,19 +426,27 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
         if(completeBlock){completeBlock();}
     }];
     [_hud hide:YES afterDelay:after];
+
 }
 
 - (void)addToAllLoadingActivityViewControllers {
+    
     ly_pAllLoadingActivityViewControllers = ly_pAllLoadingActivityViewControllers ?: [NSMutableArray array];
     [ly_pAllLoadingActivityViewControllers addObject:self];
+    
 }
 
 - (void)removeToAllLoadingActivityViewControllers {
+   
     ly_pAllLoadingActivityViewControllers = ly_pAllLoadingActivityViewControllers ?: [NSMutableArray array];
     [ly_pAllLoadingActivityViewControllers removeObject:self];
+
 }
 
 - (void)dealloc {
+    
+    NSLog(@"------- RgLoadingController dealloc -------");
+
 }
 
 @end

@@ -9,12 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
-typedef NS_ENUM(NSInteger, RgLoadingType)
-{
-
+/**
+ *  用户提示的类型
+ */
+typedef NS_ENUM(NSInteger, RgLoadingType) {
+    /**
+     *  默认的用户提示方法
+     */
     RgLoadingDefault     = 0,
-    RgLoadingGIF         = 1
-
+    /**
+     *  用 gif 动图生成用户提示
+     */
+    RgLoadingGIF         = 1,
+    /**
+     *  用 imageView 动画来生成用户提示，需要导入用户的图片数组
+     */
+    RgLoadingImageArrays = 2
 };
 
 @interface RgLoadingController : UIViewController
@@ -87,5 +97,30 @@ typedef NS_ENUM(NSInteger, RgLoadingType)
  */
 
 + (void)hideLoadingActivityViewOn:(UIViewController *)onViewController;
+
+
+/***********************************************  0.1.6新增方法，使用图片数组生成帧动画  *******************************************************/
+
+/**
+ *  用户提示
+ *
+ *  @param onViewController 在具体的控制器上
+ *  @param timer            循环一次动画所需要的时间
+ *  @param imageNames       用图片数组来存入 imageView ,从而生成帧动画
+ */
+
++ (void)showLoadingActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames;
+
+/**
+ *  用户提示
+ *
+ *  @param onViewController 在具体的控制器上
+ *  @param timer            循环一次动画所需要的时间
+ *  @param imageNames       用图片数组来存入 imageView ,从而生成帧动画
+ *  @param after            设置自动消失的时间
+ *  @param completeBlock    消失之后执行的回调方法
+ */
+
++ (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames withAfter:(CGFloat)after withComplete:(void(^)(void))completeBlock;
 
 @end

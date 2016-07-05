@@ -17,6 +17,20 @@
 		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
 		8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */; };
 		822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */; };
+		823D88CA1D2B5F990000C026 /* loading_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BC1D2B5F990000C026 /* loading_1.png */; };
+		823D88CB1D2B5F990000C026 /* loading_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BD1D2B5F990000C026 /* loading_10.png */; };
+		823D88CC1D2B5F990000C026 /* loading_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BE1D2B5F990000C026 /* loading_11.png */; };
+		823D88CD1D2B5F990000C026 /* loading_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BF1D2B5F990000C026 /* loading_12.png */; };
+		823D88CE1D2B5F990000C026 /* loading_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C01D2B5F990000C026 /* loading_13.png */; };
+		823D88CF1D2B5F990000C026 /* loading_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C11D2B5F990000C026 /* loading_14.png */; };
+		823D88D01D2B5F990000C026 /* loading_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C21D2B5F990000C026 /* loading_2.png */; };
+		823D88D11D2B5F990000C026 /* loading_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C31D2B5F990000C026 /* loading_3.png */; };
+		823D88D21D2B5F990000C026 /* loading_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C41D2B5F990000C026 /* loading_4.png */; };
+		823D88D31D2B5F990000C026 /* loading_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C51D2B5F990000C026 /* loading_5.png */; };
+		823D88D41D2B5F990000C026 /* loading_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C61D2B5F990000C026 /* loading_6.png */; };
+		823D88D51D2B5F990000C026 /* loading_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C71D2B5F990000C026 /* loading_7.png */; };
+		823D88D61D2B5F990000C026 /* loading_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C81D2B5F990000C026 /* loading_8.png */; };
+		823D88D71D2B5F990000C026 /* loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88C91D2B5F990000C026 /* loading_9.png */; };
 		823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45A81C4E349D00AEDA91 /* RogueCache.m */; };
 		823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45AB1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m */; };
 		823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */; };
@@ -33,6 +47,10 @@
 		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
 		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
+		82A7A2781D2B842700ACDB73 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2711D2B842700ACDB73 /* AESCrypt.m */; };
+		82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2731D2B842700ACDB73 /* NSData+Base64.m */; };
+		82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */; };
+		82A7A27B1D2B842700ACDB73 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2771D2B842700ACDB73 /* NSString+Base64.m */; };
 		82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8121CA229BC00458760 /* RogueCollectView.m */; };
 		82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */; };
 		82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8161CA229BC00458760 /* RogueViewController.m */; };
@@ -51,10 +69,6 @@
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
 		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
 		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
-		82F593AC1CBE7359006CC214 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F593A51CBE7359006CC214 /* AESCrypt.m */; };
-		82F593AD1CBE7359006CC214 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F593A71CBE7359006CC214 /* NSData+Base64.m */; };
-		82F593AE1CBE7359006CC214 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F593A91CBE7359006CC214 /* NSData+CommonCrypto.m */; };
-		82F593AF1CBE7359006CC214 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F593AB1CBE7359006CC214 /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +106,20 @@
 		8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftOptionalViewController.swift; sourceTree = "<group>"; };
 		822C3F911CC8AE3400A7EE13 /* RgRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRunTimeViewController.h; sourceTree = "<group>"; };
 		822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRunTimeViewController.m; sourceTree = "<group>"; };
+		823D88BC1D2B5F990000C026 /* loading_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_1.png; sourceTree = "<group>"; };
+		823D88BD1D2B5F990000C026 /* loading_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_10.png; sourceTree = "<group>"; };
+		823D88BE1D2B5F990000C026 /* loading_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_11.png; sourceTree = "<group>"; };
+		823D88BF1D2B5F990000C026 /* loading_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_12.png; sourceTree = "<group>"; };
+		823D88C01D2B5F990000C026 /* loading_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_13.png; sourceTree = "<group>"; };
+		823D88C11D2B5F990000C026 /* loading_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_14.png; sourceTree = "<group>"; };
+		823D88C21D2B5F990000C026 /* loading_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_2.png; sourceTree = "<group>"; };
+		823D88C31D2B5F990000C026 /* loading_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_3.png; sourceTree = "<group>"; };
+		823D88C41D2B5F990000C026 /* loading_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_4.png; sourceTree = "<group>"; };
+		823D88C51D2B5F990000C026 /* loading_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_5.png; sourceTree = "<group>"; };
+		823D88C61D2B5F990000C026 /* loading_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_6.png; sourceTree = "<group>"; };
+		823D88C71D2B5F990000C026 /* loading_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_7.png; sourceTree = "<group>"; };
+		823D88C81D2B5F990000C026 /* loading_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_8.png; sourceTree = "<group>"; };
+		823D88C91D2B5F990000C026 /* loading_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_9.png; sourceTree = "<group>"; };
 		823E45A71C4E349D00AEDA91 /* RogueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueCache.h; sourceTree = "<group>"; };
 		823E45A81C4E349D00AEDA91 /* RogueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueCache.m; sourceTree = "<group>"; };
 		823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueViewControllerTranstion.h; sourceTree = "<group>"; };
@@ -123,6 +151,14 @@
 		827DF2B31CA25DE6001F9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
 		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
+		82A7A2701D2B842700ACDB73 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		82A7A2711D2B842700ACDB73 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		82A7A2721D2B842700ACDB73 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		82A7A2731D2B842700ACDB73 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		82A7A2741D2B842700ACDB73 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		82A7A2761D2B842700ACDB73 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		82A7A2771D2B842700ACDB73 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		82BCB8111CA229BC00458760 /* RogueCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectView.h; path = ../RogueCollectView.h; sourceTree = "<group>"; };
 		82BCB8121CA229BC00458760 /* RogueCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueCollectView.m; path = ../RogueCollectView.m; sourceTree = "<group>"; };
 		82BCB8131CA229BC00458760 /* RogueCollectViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectViewItem.h; path = ../RogueCollectViewItem.h; sourceTree = "<group>"; };
@@ -155,14 +191,6 @@
 		82F344F71C561D9F0068746D /* RgTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTabbarViewController.m; sourceTree = "<group>"; };
 		82F344F91C561DDC0068746D /* RgZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RgZoneViewController.h; path = TextFields/RgZoneViewController.h; sourceTree = "<group>"; };
 		82F344FA1C561DDC0068746D /* RgZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RgZoneViewController.m; path = TextFields/RgZoneViewController.m; sourceTree = "<group>"; };
-		82F593A41CBE7359006CC214 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
-		82F593A51CBE7359006CC214 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
-		82F593A61CBE7359006CC214 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		82F593A71CBE7359006CC214 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		82F593A81CBE7359006CC214 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
-		82F593A91CBE7359006CC214 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		82F593AA1CBE7359006CC214 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		82F593AB1CBE7359006CC214 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +248,7 @@
 		820EC8C61C3E4A3F00B39563 /* RogueKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				82A7A26F1D2B842700ACDB73 /* AES加密 */,
 				82EDC5DE1C9A822E00E574CD /* 网络连接 */,
 				82EA15DE1C5F3637009B69F4 /* SwiftViews */,
 				823E45B91C52090900AEDA91 /* ViewControllers */,
@@ -251,14 +280,6 @@
 		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
 			isa = PBXGroup;
 			children = (
-				82F593A41CBE7359006CC214 /* AESCrypt.h */,
-				82F593A51CBE7359006CC214 /* AESCrypt.m */,
-				82F593A61CBE7359006CC214 /* NSData+Base64.h */,
-				82F593A71CBE7359006CC214 /* NSData+Base64.m */,
-				82F593A81CBE7359006CC214 /* NSData+CommonCrypto.h */,
-				82F593A91CBE7359006CC214 /* NSData+CommonCrypto.m */,
-				82F593AA1CBE7359006CC214 /* NSString+Base64.h */,
-				82F593AB1CBE7359006CC214 /* NSString+Base64.m */,
 				82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */,
 				82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */,
 				82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */,
@@ -275,9 +296,31 @@
 			path = ../../../RogueKit;
 			sourceTree = "<group>";
 		};
+		823D88BB1D2B5F990000C026 /* somePngs */ = {
+			isa = PBXGroup;
+			children = (
+				823D88BC1D2B5F990000C026 /* loading_1.png */,
+				823D88BD1D2B5F990000C026 /* loading_10.png */,
+				823D88BE1D2B5F990000C026 /* loading_11.png */,
+				823D88BF1D2B5F990000C026 /* loading_12.png */,
+				823D88C01D2B5F990000C026 /* loading_13.png */,
+				823D88C11D2B5F990000C026 /* loading_14.png */,
+				823D88C21D2B5F990000C026 /* loading_2.png */,
+				823D88C31D2B5F990000C026 /* loading_3.png */,
+				823D88C41D2B5F990000C026 /* loading_4.png */,
+				823D88C51D2B5F990000C026 /* loading_5.png */,
+				823D88C61D2B5F990000C026 /* loading_6.png */,
+				823D88C71D2B5F990000C026 /* loading_7.png */,
+				823D88C81D2B5F990000C026 /* loading_8.png */,
+				823D88C91D2B5F990000C026 /* loading_9.png */,
+			);
+			path = somePngs;
+			sourceTree = "<group>";
+		};
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				823D88BB1D2B5F990000C026 /* somePngs */,
 				824CFF7D1CA3B135004E3547 /* KeyChain */,
 				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
 				823E45C81C520B5C00AEDA91 /* TextFields */,
@@ -343,6 +386,21 @@
 				827DF2B31CA25DE6001F9F30 /* Info.plist */,
 			);
 			path = RogueKitDemoTests22;
+			sourceTree = "<group>";
+		};
+		82A7A26F1D2B842700ACDB73 /* AES加密 */ = {
+			isa = PBXGroup;
+			children = (
+				82A7A2701D2B842700ACDB73 /* AESCrypt.h */,
+				82A7A2711D2B842700ACDB73 /* AESCrypt.m */,
+				82A7A2721D2B842700ACDB73 /* NSData+Base64.h */,
+				82A7A2731D2B842700ACDB73 /* NSData+Base64.m */,
+				82A7A2741D2B842700ACDB73 /* NSData+CommonCrypto.h */,
+				82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */,
+				82A7A2761D2B842700ACDB73 /* NSString+Base64.h */,
+				82A7A2771D2B842700ACDB73 /* NSString+Base64.m */,
+			);
+			path = "AES加密";
 			sourceTree = "<group>";
 		};
 		82EA15DE1C5F3637009B69F4 /* SwiftViews */ = {
@@ -511,11 +569,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823D88CC1D2B5F990000C026 /* loading_11.png in Resources */,
 				82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */,
 				820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */,
+				823D88D51D2B5F990000C026 /* loading_7.png in Resources */,
+				823D88D41D2B5F990000C026 /* loading_6.png in Resources */,
+				823D88D61D2B5F990000C026 /* loading_8.png in Resources */,
+				823D88CD1D2B5F990000C026 /* loading_12.png in Resources */,
+				823D88CA1D2B5F990000C026 /* loading_1.png in Resources */,
 				82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */,
+				823D88D11D2B5F990000C026 /* loading_3.png in Resources */,
+				823D88D71D2B5F990000C026 /* loading_9.png in Resources */,
+				823D88CF1D2B5F990000C026 /* loading_14.png in Resources */,
+				823D88D31D2B5F990000C026 /* loading_5.png in Resources */,
+				823D88CB1D2B5F990000C026 /* loading_10.png in Resources */,
+				823D88D21D2B5F990000C026 /* loading_4.png in Resources */,
 				820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */,
+				823D88CE1D2B5F990000C026 /* loading_13.png in Resources */,
 				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
+				823D88D01D2B5F990000C026 /* loading_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +675,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F593AF1CBE7359006CC214 /* NSString+Base64.m in Sources */,
 				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
 				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
 				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
@@ -621,20 +692,21 @@
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
 				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
+				82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
+				82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
 				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
-				82F593AD1CBE7359006CC214 /* NSData+Base64.m in Sources */,
 				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
 				82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 				827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */,
-				82F593AC1CBE7359006CC214 /* AESCrypt.m in Sources */,
-				82F593AE1CBE7359006CC214 /* NSData+CommonCrypto.m in Sources */,
 				82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */,
+				82A7A2781D2B842700ACDB73 /* AESCrypt.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
+				82A7A27B1D2B842700ACDB73 /* NSString+Base64.m in Sources */,
 				822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */,
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,

@@ -21,5 +21,10 @@
     
 }
 
+- (void)dealloc {
+
+    NSLog(@"-------- %@", [self class]);
+
+}
 
 @end

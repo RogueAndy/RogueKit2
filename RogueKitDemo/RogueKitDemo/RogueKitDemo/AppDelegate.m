@@ -31,19 +31,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgRunTimeViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgRunTimeViewController1 new]];
 //    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
-//
-//    
-//    [RgNetWorkObject postMethod:@"getUserWithUserId" parameters:@{@"userid": @"11103080235"} complete:^(NSDictionary *response, RogueNetWorkType networkType) {
-//        if(networkType == RogueNetWorkRight) {
-//        
-//            NSLog(@"%@", response[@"obj"]);
-//        
-//        }
-//    }];
 
     return YES;
 }
