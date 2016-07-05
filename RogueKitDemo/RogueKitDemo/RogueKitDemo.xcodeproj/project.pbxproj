@@ -51,12 +51,12 @@
 		82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2731D2B842700ACDB73 /* NSData+Base64.m */; };
 		82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */; };
 		82A7A27B1D2B842700ACDB73 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2771D2B842700ACDB73 /* NSString+Base64.m */; };
+		82A7A27D1D2B9D0100ACDB73 /* RgRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82A7A27C1D2B9D0100ACDB73 /* RgRefresh.gif */; };
 		82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8121CA229BC00458760 /* RogueCollectView.m */; };
 		82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */; };
 		82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB8161CA229BC00458760 /* RogueViewController.m */; };
 		82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCB81B1CA2300800458760 /* RogueUserObject.m */; };
 		82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C06F751C9FD26100371B09 /* ImageIO.framework */; };
-		82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */; };
 		82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */; };
 		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
 		82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DA1C5F3618009B69F4 /* Alamofire.framework */; };
@@ -159,6 +159,7 @@
 		82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		82A7A2761D2B842700ACDB73 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		82A7A2771D2B842700ACDB73 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		82A7A27C1D2B9D0100ACDB73 /* RgRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RgRefresh.gif; sourceTree = "<group>"; };
 		82BCB8111CA229BC00458760 /* RogueCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectView.h; path = ../RogueCollectView.h; sourceTree = "<group>"; };
 		82BCB8121CA229BC00458760 /* RogueCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RogueCollectView.m; path = ../RogueCollectView.m; sourceTree = "<group>"; };
 		82BCB8131CA229BC00458760 /* RogueCollectViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RogueCollectViewItem.h; path = ../RogueCollectViewItem.h; sourceTree = "<group>"; };
@@ -168,7 +169,6 @@
 		82BCB81A1CA2300800458760 /* RogueUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueUserObject.h; sourceTree = "<group>"; };
 		82BCB81B1CA2300800458760 /* RogueUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueUserObject.m; sourceTree = "<group>"; };
 		82C06F751C9FD26100371B09 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RgRefresh.gif; sourceTree = "<group>"; };
 		82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RgGIF.h"; sourceTree = "<group>"; };
 		82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RgGIF.m"; sourceTree = "<group>"; };
 		82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgStoryViewController.h; sourceTree = "<group>"; };
@@ -255,6 +255,7 @@
 				820EC8DE1C3E52B200B39563 /* RogueKit */,
 				820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */,
 				820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */,
+				82A7A27C1D2B9D0100ACDB73 /* RgRefresh.gif */,
 				823E45B61C50BE4D00AEDA91 /* RogueNetWorkViewController.h */,
 				823E45B71C50BE4D00AEDA91 /* RogueNetWorkViewController.m */,
 				820EC8CD1C3E4A3F00B39563 /* ViewController.h */,
@@ -280,7 +281,6 @@
 		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
 			isa = PBXGroup;
 			children = (
-				82C06F7B1C9FEA0600371B09 /* RgRefresh.gif */,
 				82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */,
 				82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */,
 				823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */,
@@ -570,7 +570,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				823D88CC1D2B5F990000C026 /* loading_11.png in Resources */,
-				82C06F7E1C9FEA0600371B09 /* RgRefresh.gif in Resources */,
 				820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */,
 				823D88D51D2B5F990000C026 /* loading_7.png in Resources */,
 				823D88D41D2B5F990000C026 /* loading_6.png in Resources */,
@@ -588,6 +587,7 @@
 				823D88CE1D2B5F990000C026 /* loading_13.png in Resources */,
 				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
 				823D88D01D2B5F990000C026 /* loading_2.png in Resources */,
+				82A7A27D1D2B9D0100ACDB73 /* RgRefresh.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
