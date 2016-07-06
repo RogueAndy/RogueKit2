@@ -98,11 +98,26 @@
                         @"loading_14"
                         ];
 
-    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self
-                                                  repeatTimer:1.5
-                                          animationImageNames:arrays
-                                                    withAfter:3
-                                                 withComplete:nil];
+//    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self
+//                                                  repeatTimer:1.5
+//                                          animationImageNames:arrays
+//                                                    withAfter:3
+//                                                 withComplete:nil];
+    
+//    [RgLoadingController showLoadingActivityViewOn:self];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2ull * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        [RgLoadingController hideLoadingActivityViewOn:self];
+//        
+//    });
+    
+//    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self hudType:RgLoadingDefault titleOrGif:@"测试" withAfter:2 withComplete:^{
+//        NSLog(@"完毕----");
+//    }];
+    
+    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self repeatTimer:1.5 animationImageNames:arrays withAfter:4 withComplete:^{
+        NSLog(@"完毕-----");
+    }];
 
 
 }

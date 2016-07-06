@@ -24,56 +24,45 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 #pragma mark - 显示菊花
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController {
-    __block MBProgressHUD *hud;
-    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[MBProgressHUD class]]) {
-            hud = (MBProgressHUD *)obj;
-        }
-    }];
-    if (hud == nil) {
-        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-        [onViewController.view addSubview:hud];
-    }
-    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-    [loadingVC showLoadingActivityView:MBProgressHUDModeIndeterminate];
+    
+    [self loadingType:RgLoadingDefault
+                after:0
+                title:nil
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:nil];
+    
 }
 
 #pragma mark - 显示菊花并且提示语
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController withTitle:(NSString *)title {
-    __block MBProgressHUD *hud;
-    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[MBProgressHUD class]]) {
-            hud = (MBProgressHUD *)obj;
-        }
-    }];
-    if (hud == nil) {
-        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-        [onViewController.view addSubview:hud];
-    }
-    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:title];
-    [loadingVC showLoadingActivityView:MBProgressHUDModeIndeterminate];
+    
+    [self loadingType:RgLoadingDefault
+                after:0
+                title:title
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:nil];
+
 }
 
 #pragma mark - 显示菊花之后自动消失，一般附带提示语，并且没有哦菊花字样
 
 + (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController withTitle:(NSString *)title withAfter:(CGFloat)after withComplete:(void (^)(void))completeBlock {
-    
-    __block MBProgressHUD *hud;
-    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[MBProgressHUD class]]) {
-            hud = (MBProgressHUD *)obj;
-        }
-    }];
-    if (hud == nil) {
-        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-        [onViewController.view addSubview:hud];
-    }
-    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:title];
-    [loadingVC showLoadingActivityView:MBProgressHUDModeText];
-    
-    
-    [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+
+    [self loadingType:RgLoadingDefault
+                after:after
+                title:title
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:completeBlock];
     
 }
 
@@ -94,154 +83,42 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type {
-
-    switch (type) {
-        case RgLoadingGIF:
-        {
-        
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-            UIImageView *gifImage = [UIImageView initWithGIFName:@"RgRefresh"];
-            gifImage.frame = CGRectMake(0, 0, 90, 90);
-            hud.minSize = gifImage.bounds.size;
-            gifImage.center = hud.center;
-            [hud addSubview:gifImage];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView];
-            
-        }
-            break;
-            
-        default:
-        {
-            
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeIndeterminate];
-            
-        }
-            break;
-    }
+    
+    [self loadingType:type
+                after:0
+                title:nil
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:nil];
 
 }
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type titleOrGif:(NSString *)parameter {
 
-    switch (type) {
-        case RgLoadingGIF:
-        {
-            
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-            UIImageView *gifImage = [UIImageView initWithGIFName:(parameter == nil ? @"RgRefresh" : parameter)];
-            gifImage.frame = CGRectMake(0, 0, 90, 90);
-            gifImage.center = hud.center;
-            hud.minSize = gifImage.bounds.size;
-            [hud addSubview:gifImage];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView];
-        
-        }
-            break;
-            
-        default:
-        {
-        
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:parameter];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeIndeterminate];
-        
-        }
-            break;
-    }
+    [self loadingType:type
+                after:0
+                title:parameter
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:parameter
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:nil];
 
 }
 
 + (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController hudType:(RgLoadingType)type titleOrGif:(NSString *)parameter withAfter:(CGFloat)after withComplete:(void (^)(void))completeBlock {
 
-    switch (type) {
-        case RgLoadingGIF:
-        {
-        
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-            UIImageView *gifImage = [UIImageView initWithGIFName:(parameter == nil ? @"RgRefresh" : parameter)];
-            gifImage.frame = CGRectMake(0, 0, 90, 90);
-            hud.minSize = gifImage.bounds.size;
-            gifImage.center = hud.center;
-            [hud addSubview:gifImage];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView];
-            
-            [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
-        
-        }
-            break;
-            
-        default:
-        {
-            
-            __block MBProgressHUD *hud;
-            [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-                if ([obj isKindOfClass:[MBProgressHUD class]]) {
-                    hud = (MBProgressHUD *)obj;
-                }
-            }];
-            if (hud == nil) {
-                hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-                [onViewController.view addSubview:hud];
-            }
-            RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:parameter];
-            [loadingVC showLoadingActivityView:MBProgressHUDModeText];
-            
-            [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
-        
-        }
-            break;
-    }
-    
+    [self loadingType:type
+                after:after
+                title:parameter
+          repeatTimes:0
+           imageNames:nil
+         gifImageName:parameter
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:completeBlock];
+
 }
 
 #pragma mark - 显示菊花
@@ -305,36 +182,33 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 
 + (void)showLoadingActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames {
 
-    __block MBProgressHUD *hud;
-    [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:[MBProgressHUD class]]) {
-            hud = (MBProgressHUD *)obj;
-        }
-    }];
-    if (hud == nil) {
-        hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
-        [onViewController.view addSubview:hud];
-    }
-    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-    UIImageView *gifImage = [[UIImageView alloc] init];
-    NSMutableArray *images = [[NSMutableArray alloc] init];
-    [imageNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [images addObject:[UIImage imageNamed:obj]];
-    }];
-    gifImage.animationImages = [images copy];
-    gifImage.animationRepeatCount = 0;
-    gifImage.animationDuration = timer;
-    gifImage.contentMode = UIViewContentModeScaleAspectFill;
-    gifImage.frame = CGRectMake(0, 0, 31, 31);
-    hud.minSize = CGSizeMake(80, 80);
-    gifImage.center = hud.center;
-    [gifImage startAnimating];
-    [hud addSubview:gifImage];
-    [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView imageView:gifImage];
+    [self loadingType:RgLoadingImageArrays
+                after:0
+                title:nil
+          repeatTimes:timer
+           imageNames:imageNames
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:nil];
     
 }
 
 + (void)showLoadingSoonDisplayActivityViewOn:(UIViewController *)onViewController repeatTimer:(NSTimeInterval)timer animationImageNames:(NSArray *)imageNames withAfter:(CGFloat)after withComplete:(void(^)(void))completeBlock {
+    
+    [self loadingType:RgLoadingImageArrays
+                after:after
+                title:nil
+          repeatTimes:timer
+           imageNames:imageNames
+         gifImageName:nil
+              hudView:[self showLoadingViewOnViewController:onViewController]
+         withComplete:completeBlock];
+    
+}
+
+#pragma mark - 循环控制器，查找当前界面上所有的用户提示框，如果有，则删除之后重新添加，如果没得，则新建
+
++ (MBProgressHUD *)showLoadingViewOnViewController:(UIViewController *)onViewController {
 
     __block MBProgressHUD *hud;
     [onViewController.view.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
@@ -346,28 +220,79 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
         hud = [[MBProgressHUD alloc] initWithView:onViewController.view];
         [onViewController.view addSubview:hud];
     }
-    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:nil];
-    UIImageView *gifImage = [[UIImageView alloc] init];
-    NSMutableArray *images = [[NSMutableArray alloc] init];
-    [imageNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [images addObject:[UIImage imageNamed:obj]];
-    }];
-    gifImage.animationImages = [images copy];
-    gifImage.animationRepeatCount = 0;
-    gifImage.animationDuration = timer;
-    gifImage.contentMode = UIViewContentModeScaleAspectFill;
-    gifImage.frame = CGRectMake(0, 0, 31, 31);
-    hud.minSize = CGSizeMake(80, 80);
-    gifImage.center = hud.center;
-    [gifImage startAnimating];
-    [hud addSubview:gifImage];
-    [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView imageView:gifImage];
     
-    [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+    return hud;
 
 }
 
+#pragma mark - 公用底层方法
 
++ (void)loadingType:(RgLoadingType)type after:(CGFloat)after title:(NSString *)title repeatTimes:(NSTimeInterval)repeatTimer imageNames:(NSArray *)imageNames gifImageName:(NSString *)parameter hudView:(MBProgressHUD *)hud withComplete:(void(^)(void))completeBlock {
+
+    RgLoadingController *loadingVC = [[self alloc] initWithHUD:hud withTitle:title];
+    
+    switch (type) {
+        case RgLoadingDefault: {
+            
+            [loadingVC showLoadingActivityView:MBProgressHUDModeIndeterminate];
+            
+            break;
+        }
+        case RgLoadingGIF: {
+            
+            UIImageView *gifImage = [UIImageView initWithGIFName:(parameter == nil ? @"RgRefresh" : parameter)];
+            gifImage.frame = CGRectMake(0, 0, 90, 90);
+            hud.minSize = gifImage.bounds.size;
+            gifImage.center = hud.center;
+            [hud addSubview:gifImage];
+            [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView];
+            
+            break;
+        }
+        case RgLoadingImageArrays: {
+            
+            UIImageView *gifImage = [[UIImageView alloc] init];
+            NSMutableArray *images = [[NSMutableArray alloc] init];
+            [imageNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [images addObject:[UIImage imageNamed:obj]];
+            }];
+            gifImage.animationImages = [images copy];
+            gifImage.animationRepeatCount = 0;
+            gifImage.animationDuration = repeatTimer;
+            gifImage.contentMode = UIViewContentModeScaleAspectFill;
+            gifImage.frame = CGRectMake(0, 0, 31, 31);
+            hud.minSize = CGSizeMake(80, 80);
+            gifImage.center = hud.center;
+            [gifImage startAnimating];
+            [hud addSubview:gifImage];
+            [loadingVC showLoadingActivityView:MBProgressHUDModeCustomView imageView:gifImage];
+            
+            break;
+        }
+    }
+    
+    if(after == 0) {
+    
+        return;
+        
+    }
+    
+    switch (type) {
+        case RgLoadingDefault: {
+            [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+            break;
+        }
+        case RgLoadingGIF: {
+            [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+            break;
+        }
+        case RgLoadingImageArrays: {
+            [loadingVC hideLoadingActivityView:after withComplete:completeBlock];
+            break;
+        }
+    }
+
+}
 
 
 /***********************************************  动态方法  *******************************************************/
