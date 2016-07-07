@@ -9,8 +9,7 @@
 #import "RgRunTimeViewController.h"
 #import <objc/runtime.h>
 #import "RgLoadingController.h"
-
-
+#import "UILabel+RgLabel.h"
 
 @interface RgRunTimeViewController1()
 
@@ -60,6 +59,7 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     [self loadSubviews];
+    [self loadRgLabel];
     
 }
 
@@ -72,6 +72,21 @@
     [button addTarget:self action:@selector(clickButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 
+}
+
+- (void)loadRgLabel {
+
+    NSString *str = @"瓦达瓦大煎熬达瓦达瓦六角恐龙据了解立刻就分手刻录机俄罗斯飞机上了就发立刻就两节课了的弯道立刻就了解到垃圾我打拉开距离惊呆了接娃娃打我";
+    
+    UILabel *fitLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 140, [[UIScreen mainScreen] bounds].size.width - 200, 400)];
+    fitLabel.font = [UIFont systemFontOfSize:20];
+    fitLabel.text = str;
+    fitLabel.numberOfLines = 0;
+    fitLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    [self.view addSubview:fitLabel];
+
+    NSLog(@"%f", [fitLabel height]);
+    
 }
 
 - (void)clickButtonAction:(UIButton *)sender {
@@ -98,11 +113,11 @@
                         @"loading_14"
                         ];
 
-//    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self
-//                                                  repeatTimer:1.5
-//                                          animationImageNames:arrays
-//                                                    withAfter:3
-//                                                 withComplete:nil];
+    [RgLoadingController showLoadingSoonDisplayActivityViewOn:self
+                                                  repeatTimer:1.5
+                                          animationImageNames:arrays
+                                                    withAfter:0
+                                                 withComplete:nil];
     
 //    [RgLoadingController showLoadingActivityViewOn:self];
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2ull * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

@@ -37,7 +37,6 @@
 		823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */; };
 		823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */; };
 		823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */; };
-		823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45CA1C520B7400AEDA91 /* RgTextField.m */; };
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
 		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
@@ -47,6 +46,8 @@
 		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
 		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
+		829D06041D2DF131006C0827 /* UILabel+RgLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06031D2DF131006C0827 /* UILabel+RgLabel.m */; };
+		829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06061D2DFA0D006C0827 /* RgTextField.m */; };
 		82A7A2781D2B842700ACDB73 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2711D2B842700ACDB73 /* AESCrypt.m */; };
 		82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2731D2B842700ACDB73 /* NSData+Base64.m */; };
 		82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */; };
@@ -132,8 +133,6 @@
 		823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoginViewController.m; sourceTree = "<group>"; };
 		823E45C01C520AF000AEDA91 /* RgRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRegisterViewController.h; sourceTree = "<group>"; };
 		823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRegisterViewController.m; sourceTree = "<group>"; };
-		823E45C91C520B7400AEDA91 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
-		823E45CA1C520B7400AEDA91 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
 		824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgWebViewController.h; sourceTree = "<group>"; };
 		824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgWebViewController.m; sourceTree = "<group>"; };
 		824CFF7E1CA3B14C004E3547 /* RgKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainStore.h; sourceTree = "<group>"; };
@@ -151,6 +150,10 @@
 		827DF2B31CA25DE6001F9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
 		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
+		829D06021D2DF131006C0827 /* UILabel+RgLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RgLabel.h"; sourceTree = "<group>"; };
+		829D06031D2DF131006C0827 /* UILabel+RgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RgLabel.m"; sourceTree = "<group>"; };
+		829D06051D2DFA0D006C0827 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
+		829D06061D2DFA0D006C0827 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
 		82A7A2701D2B842700ACDB73 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		82A7A2711D2B842700ACDB73 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
 		82A7A2721D2B842700ACDB73 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
 			isa = PBXGroup;
 			children = (
+				829D06051D2DFA0D006C0827 /* RgTextField.h */,
+				829D06061D2DFA0D006C0827 /* RgTextField.m */,
 				82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */,
 				82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */,
 				823E45AA1C4F2EA900AEDA91 /* RogueViewControllerTranstion.h */,
@@ -291,6 +296,8 @@
 				823E45A81C4E349D00AEDA91 /* RogueCache.m */,
 				82BCB81A1CA2300800458760 /* RogueUserObject.h */,
 				82BCB81B1CA2300800458760 /* RogueUserObject.m */,
+				829D06021D2DF131006C0827 /* UILabel+RgLabel.h */,
+				829D06031D2DF131006C0827 /* UILabel+RgLabel.m */,
 			);
 			name = RogueKit;
 			path = ../../../RogueKit;
@@ -362,8 +369,6 @@
 				82BCB8141CA229BC00458760 /* RogueCollectViewItem.m */,
 				82BCB8151CA229BC00458760 /* RogueViewController.h */,
 				82BCB8161CA229BC00458760 /* RogueViewController.m */,
-				823E45C91C520B7400AEDA91 /* RgTextField.h */,
-				823E45CA1C520B7400AEDA91 /* RgTextField.m */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -676,7 +681,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				823E45AC1C4F2EA900AEDA91 /* RogueViewControllerTranstion.m in Sources */,
-				823E45CB1C520B7400AEDA91 /* RgTextField.m in Sources */,
+				829D06041D2DF131006C0827 /* UILabel+RgLabel.m in Sources */,
 				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */,
@@ -695,6 +700,7 @@
 				82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
+				829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */,
 				82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
 				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
