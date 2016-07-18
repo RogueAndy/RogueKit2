@@ -143,6 +143,7 @@
 		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
 		82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgCollectViewController1.h; sourceTree = "<group>"; };
 		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
+		827B29761D3C73A600B8AAD1 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		827DF2A81CA23F0F001F9F30 /* RgUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUserObject.h; sourceTree = "<group>"; };
 		827DF2A91CA23F0F001F9F30 /* RgUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUserObject.m; sourceTree = "<group>"; };
 		827DF2AF1CA25DE3001F9F30 /* RogueKitDemoTests22.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogueKitDemoTests22.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -459,6 +460,7 @@
 		EF6BD6B7373E0C5E8F4F29DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				827B29761D3C73A600B8AAD1 /* Reveal.framework */,
 				82C06F751C9FD26100371B09 /* ImageIO.framework */,
 				82EA15DC1C5F362A009B69F4 /* SnapKit.framework */,
 				82EA15DA1C5F3618009B69F4 /* Alamofire.framework */,
@@ -867,6 +869,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -874,6 +877,37 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"TOWebViewController\"",
+					"-l\"UICKeyChainStore\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"MessageUI\"",
+					"-weak_framework",
+					"\"Twitter\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -894,6 +928,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -901,6 +936,37 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"TOWebViewController\"",
+					"-l\"UICKeyChainStore\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"MessageUI\"",
+					"-weak_framework",
+					"\"Twitter\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

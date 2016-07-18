@@ -31,7 +31,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgRunTimeViewController1 new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgLoginViewController new]];
 //    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
