@@ -17,6 +17,10 @@ typedef NS_ENUM(NSInteger, RgTe)
 
 };
 
+@interface RgRunTimeViewController2 : RogueBaseViewContorller
+
+@end
+
 @interface RgRunTimeViewController1 : RogueBaseViewContorller
 
 @end

@@ -11,6 +11,45 @@
 #import "RgLoadingController.h"
 #import "UILabel+RgLabel.h"
 
+@interface RgRunTimeViewController2()
+
+@property (atomic) NSInteger count;
+
+@end
+
+@implementation RgRunTimeViewController2
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    self.count = 0;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSLog(@"---上: %ld", (long)self.count);
+        self.count = self.count + 1;
+        NSLog(@"---下: %ld", (long)self.count);
+        
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSLog(@"~~~上: %ld", (long)self.count);
+        self.count = self.count - 1;
+        NSLog(@"~~~下: %ld", (long)self.count);
+        
+    });
+
+}
+
+@end
+
+
+
+
+
+
 @interface RgRunTimeViewController1()
 
 @end
@@ -32,7 +71,7 @@
 
 - (void)pushViewController:(UIButton *)sender {
 
-    [self.navigationController pushViewController:[RgRunTimeViewController new] animated:YES];
+    [self.navigationController pushViewController:[RgRunTimeViewController2 new] animated:YES];
 
 }
 
