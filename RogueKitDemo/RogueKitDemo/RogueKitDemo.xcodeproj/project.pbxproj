@@ -70,6 +70,7 @@
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
 		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
 		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
+		C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,8 @@
 		82F344F91C561DDC0068746D /* RgZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RgZoneViewController.h; path = TextFields/RgZoneViewController.h; sourceTree = "<group>"; };
 		82F344FA1C561DDC0068746D /* RgZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RgZoneViewController.m; path = TextFields/RgZoneViewController.m; sourceTree = "<group>"; };
 		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C1B7892D1D5D165400051EC5 /* RgMengCengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMengCengViewController.h; sourceTree = "<group>"; };
+		C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMengCengViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +345,8 @@
 				823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */,
 				82F344F31C561D720068746D /* RgHomeViewController.h */,
 				82F344F41C561D720068746D /* RgHomeViewController.m */,
+				C1B7892D1D5D165400051EC5 /* RgMengCengViewController.h */,
+				C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */,
 				82F344F61C561D9F0068746D /* RgTabbarViewController.h */,
 				82F344F71C561D9F0068746D /* RgTabbarViewController.m */,
 				82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */,
@@ -719,6 +724,7 @@
 				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
+				C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */,
 				823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

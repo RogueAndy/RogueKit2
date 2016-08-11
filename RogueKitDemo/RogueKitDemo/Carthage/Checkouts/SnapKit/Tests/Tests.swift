@@ -249,4 +249,69 @@ class SnapKitTests: XCTestCase {
         XCTAssertEqual(constraints[1].constant, 50, "Should be 50")
     }
     
+    func testConstraintIdentifier() {
+        let identifier = "Test-Identifier"
+        let view = View()
+        self.container.addSubview(view)
+        
+        view.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(self.container.snp_top).labeled(identifier)
+        }
+        
+        let constraints = container.snp_constraints as! [NSLayoutConstraint]
+        XCTAssertEqual(constraints[0].identifier, identifier, "Identifier should be 'Test'")
+    }
+    
+    func testSuperviewConstraints() {
+        let view = View()
+        
+        container.addSubview(view)
+        
+        view.snp_makeConstraints { (make) -> Void in
+            make.top.equalToSuperview().inset(10)
+            make.bottom.equalToSuperview().inset(10)
+        }
+        
+        XCTAssertEqual(container.snp_constraints.count, 2, "Should have 2 constraints")
+        
+        let constraints = container.snp_constraints as! [NSLayoutConstraint]
+        
+        XCTAssertEqual(constraints[0].firstAttribute, NSLayoutAttribute.Top, "Should be top")
+        XCTAssertEqual(constraints[1].firstAttribute, NSLayoutAttribute.Bottom, "Should be bottom")
+        
+        XCTAssertEqual(constraints[0].secondAttribute, NSLayoutAttribute.Top, "Should be top")
+        XCTAssertEqual(constraints[1].secondAttribute, NSLayoutAttribute.Bottom, "Should be bottom")
+        
+        XCTAssertEqual(constraints[0].firstItem as? View, view, "Should be added subview")
+        XCTAssertEqual(constraints[1].firstItem as? View, view, "Should be added subview")
+        
+        XCTAssertEqual(constraints[0].secondItem as? View, container, "Should be containerView")
+        XCTAssertEqual(constraints[1].secondItem as? View, container, "Should be containerView")
+        
+        XCTAssertEqual(constraints[0].constant, 10, "Should be 10")
+        XCTAssertEqual(constraints[1].constant, -10, "Should be 10")
+    }
+
+    func testNativeConstraints() {
+        let view = View()
+        
+        container.addSubview(view)
+        
+        var topNativeConstraints: [LayoutConstraint]!
+        var topNativeConstraint: LayoutConstraint?
+        var sizeNativeConstraints: [LayoutConstraint]!
+        view.snp_makeConstraints { (make) -> Void in
+            let topConstraint = make.top.equalToSuperview().inset(10).constraint
+            topNativeConstraints = topConstraint.layoutConstraints
+            topNativeConstraint = topConstraint.layoutConstraints.first
+            let sizeConstraints = make.size.equalTo(50).constraint
+            sizeNativeConstraints = sizeConstraints.layoutConstraints
+        }
+
+        XCTAssertEqual(topNativeConstraints.count, 1, "make.top should creates one native constraint")
+        XCTAssertEqual(topNativeConstraint?.constant, 10, "topNativeConstraint.constant is set to 10")
+        XCTAssertEqual(sizeNativeConstraints.count, 2, "make.tosize should create two native constraint")
+        XCTAssertEqual(sizeNativeConstraints[0].constant, 50, "sizeNativeConstraints should set size[0] to 50")
+        XCTAssertEqual(sizeNativeConstraints[1].constant, 50, "sizeNativeConstraints should set size[1] to 50")
+    }
 }
