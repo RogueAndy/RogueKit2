@@ -69,7 +69,6 @@
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
 		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
 		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
-		C14612A01D73E0020070C067 /* RgRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = C146129F1D73E0020070C067 /* RgRefresh.gif */; };
 		C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -196,7 +195,6 @@
 		82F344F91C561DDC0068746D /* RgZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RgZoneViewController.h; path = TextFields/RgZoneViewController.h; sourceTree = "<group>"; };
 		82F344FA1C561DDC0068746D /* RgZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RgZoneViewController.m; path = TextFields/RgZoneViewController.m; sourceTree = "<group>"; };
 		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C146129F1D73E0020070C067 /* RgRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RgRefresh.gif; sourceTree = "<group>"; };
 		C1B7892D1D5D165400051EC5 /* RgMengCengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMengCengViewController.h; sourceTree = "<group>"; };
 		C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMengCengViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -287,7 +285,6 @@
 		820EC8DE1C3E52B200B39563 /* RogueKit */ = {
 			isa = PBXGroup;
 			children = (
-				C146129F1D73E0020070C067 /* RgRefresh.gif */,
 				829D06051D2DFA0D006C0827 /* RgTextField.h */,
 				829D06061D2DFA0D006C0827 /* RgTextField.m */,
 				82C06F7C1C9FEA0600371B09 /* UIImageView+RgGIF.h */,
@@ -599,7 +596,6 @@
 				823D88CE1D2B5F990000C026 /* loading_13.png in Resources */,
 				820EC8D21C3E4A3F00B39563 /* Main.storyboard in Resources */,
 				823D88D01D2B5F990000C026 /* loading_2.png in Resources */,
-				C14612A01D73E0020070C067 /* RgRefresh.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
