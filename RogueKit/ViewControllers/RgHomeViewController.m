@@ -7,6 +7,7 @@
 //
 
 #import "RgHomeViewController.h"
+#import "RgLoadingController.h"
 
 @interface RgHomeViewController ()
 
@@ -18,6 +19,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
     self.title = @"Home";
+    
+    [RgLoadingController showLoadingActivityViewOn:self hudType:RgLoadingGIF];
+    
 }
 
 @end
