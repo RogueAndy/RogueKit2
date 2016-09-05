@@ -19,6 +19,7 @@
 #import "RgNetWorkObject.h"
 #import "RgKeyChainViewController.h"
 #import "RgMengCengViewController.h"
+#import "RgHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -31,7 +32,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+<<<<<<< HEAD
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgHomeViewController new]];
+//    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
+=======
     UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgMengCengViewController new]];
+>>>>>>> 42d25bdb193efbef72d79b4f2779dc14b0125815
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
