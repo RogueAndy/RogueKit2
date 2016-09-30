@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */; };
 		820EC8C91C3E4A3F00B39563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8C81C3E4A3F00B39563 /* main.m */; };
 		820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CB1C3E4A3F00B39563 /* AppDelegate.m */; };
 		820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8CE1C3E4A3F00B39563 /* ViewController.m */; };
@@ -15,7 +14,6 @@
 		820EC8D41C3E4A3F00B39563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D31C3E4A3F00B39563 /* Assets.xcassets */; };
 		820EC8D71C3E4A3F00B39563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820EC8D51C3E4A3F00B39563 /* LaunchScreen.storyboard */; };
 		820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EC8E01C3E52B200B39563 /* RgLoadingController.m */; };
-		8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */; };
 		822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */; };
 		823D88CA1D2B5F990000C026 /* loading_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BC1D2B5F990000C026 /* loading_1.png */; };
 		823D88CB1D2B5F990000C026 /* loading_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 823D88BD1D2B5F990000C026 /* loading_10.png */; };
@@ -40,8 +38,6 @@
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
 		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
-		82718C061C8961B200B582CA /* RgCollectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C051C8961B200B582CA /* RgCollectView.swift */; };
-		82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82718C071C89637600B582CA /* RgCollectViewItem.swift */; };
 		82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 82718C101C8D5B3400B582CA /* RgCollectViewController1.m */; };
 		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
 		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
@@ -60,9 +56,6 @@
 		82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C06F751C9FD26100371B09 /* ImageIO.framework */; };
 		82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */; };
 		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
-		82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DA1C5F3618009B69F4 /* Alamofire.framework */; };
-		82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EA15DC1C5F362A009B69F4 /* SnapKit.framework */; };
-		82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */; };
 		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
 		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
 		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
@@ -70,6 +63,7 @@
 		82F344F51C561D720068746D /* RgHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F41C561D720068746D /* RgHomeViewController.m */; };
 		82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344F71C561D9F0068746D /* RgTabbarViewController.m */; };
 		82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F344FA1C561DDC0068746D /* RgZoneViewController.m */; };
+		A53AE5937B9FEE84D1E266EF /* libPods-RogueKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 522C61A1F8F1E2660BFAE821 /* libPods-RogueKitDemo.a */; };
 		C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RogueKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		522C61A1F8F1E2660BFAE821 /* libPods-RogueKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RogueKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EC8C41C3E4A3F00B39563 /* RogueKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogueKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820EC8C81C3E4A3F00B39563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,7 +98,6 @@
 		820EC8D81C3E4A3F00B39563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820EC8DF1C3E52B200B39563 /* RgLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLoadingController.h; sourceTree = "<group>"; };
 		820EC8E01C3E52B200B39563 /* RgLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoadingController.m; sourceTree = "<group>"; };
-		8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftOptionalViewController.swift; sourceTree = "<group>"; };
 		822C3F911CC8AE3400A7EE13 /* RgRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRunTimeViewController.h; sourceTree = "<group>"; };
 		822C3F921CC8AE3400A7EE13 /* RgRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRunTimeViewController.m; sourceTree = "<group>"; };
 		823D88BC1D2B5F990000C026 /* loading_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_1.png; sourceTree = "<group>"; };
@@ -140,8 +132,6 @@
 		824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainStore.m; sourceTree = "<group>"; };
 		824CFF811CA3B233004E3547 /* RgKeyChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainViewController.h; sourceTree = "<group>"; };
 		824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgKeyChainViewController.m; sourceTree = "<group>"; };
-		82718C051C8961B200B582CA /* RgCollectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectView.swift; sourceTree = "<group>"; };
-		82718C071C89637600B582CA /* RgCollectViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgCollectViewItem.swift; sourceTree = "<group>"; };
 		82718C0F1C8D5B3400B582CA /* RgCollectViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgCollectViewController1.h; sourceTree = "<group>"; };
 		82718C101C8D5B3400B582CA /* RgCollectViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgCollectViewController1.m; sourceTree = "<group>"; };
 		827B29761D3C73A600B8AAD1 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
@@ -178,10 +168,7 @@
 		82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RgGIF.m"; sourceTree = "<group>"; };
 		82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgStoryViewController.h; sourceTree = "<group>"; };
 		82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgStoryViewController.m; sourceTree = "<group>"; };
-		82EA15DA1C5F3618009B69F4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		82EA15DC1C5F362A009B69F4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RgSwiftUpimageViewController.swift; sourceTree = "<group>"; };
 		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
 		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
 		82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RgFirstStoryboard.storyboard; sourceTree = "<group>"; };
@@ -196,7 +183,8 @@
 		82F344F71C561D9F0068746D /* RgTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTabbarViewController.m; sourceTree = "<group>"; };
 		82F344F91C561DDC0068746D /* RgZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RgZoneViewController.h; path = TextFields/RgZoneViewController.h; sourceTree = "<group>"; };
 		82F344FA1C561DDC0068746D /* RgZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RgZoneViewController.m; path = TextFields/RgZoneViewController.m; sourceTree = "<group>"; };
-		B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		90FF9C3E6C0F6216D83B6B20 /* Pods-RogueKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BC48939F2FB74D077C8BFFDE /* Pods-RogueKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogueKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C1B7892D1D5D165400051EC5 /* RgMengCengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMengCengViewController.h; sourceTree = "<group>"; };
 		C1B7892E1D5D165400051EC5 /* RgMengCengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMengCengViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,9 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82EA15DD1C5F362A009B69F4 /* SnapKit.framework in Frameworks */,
-				7D13114C5FCB62F0B4303547 /* libPods-RogueKitDemo.a in Frameworks */,
-				82EA15DB1C5F3618009B69F4 /* Alamofire.framework in Frameworks */,
+				A53AE5937B9FEE84D1E266EF /* libPods-RogueKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +216,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270DCEB362E9E1C778D7A4C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90FF9C3E6C0F6216D83B6B20 /* Pods-RogueKitDemo.debug.xcconfig */,
+				BC48939F2FB74D077C8BFFDE /* Pods-RogueKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		820EC8BB1C3E4A3F00B39563 = {
 			isa = PBXGroup;
 			children = (
@@ -237,8 +232,8 @@
 				82EDC5EC1C9A86DB00E574CD /* RogueKitDemoTests */,
 				827DF2B01CA25DE6001F9F30 /* RogueKitDemoTests22 */,
 				820EC8C51C3E4A3F00B39563 /* Products */,
-				C30862CFCCFA93BC062D6886 /* Pods */,
 				EF6BD6B7373E0C5E8F4F29DA /* Frameworks */,
+				270DCEB362E9E1C778D7A4C6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,7 +252,6 @@
 			children = (
 				82A7A26F1D2B842700ACDB73 /* AES加密 */,
 				82EDC5DE1C9A822E00E574CD /* 网络连接 */,
-				82EA15DE1C5F3637009B69F4 /* SwiftViews */,
 				823E45B91C52090900AEDA91 /* ViewControllers */,
 				820EC8DE1C3E52B200B39563 /* RogueKit */,
 				820EC8CA1C3E4A3F00B39563 /* AppDelegate.h */,
@@ -414,17 +408,6 @@
 			path = "AES加密";
 			sourceTree = "<group>";
 		};
-		82EA15DE1C5F3637009B69F4 /* SwiftViews */ = {
-			isa = PBXGroup;
-			children = (
-				82EA15E01C5F366D009B69F4 /* RgSwiftUpimageViewController.swift */,
-				8225169D1C76EB1400B92267 /* RgSwiftOptionalViewController.swift */,
-				82718C051C8961B200B582CA /* RgCollectView.swift */,
-				82718C071C89637600B582CA /* RgCollectViewItem.swift */,
-			);
-			path = SwiftViews;
-			sourceTree = "<group>";
-		};
 		82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,23 +436,12 @@
 			path = RogueKitDemoTests;
 			sourceTree = "<group>";
 		};
-		C30862CFCCFA93BC062D6886 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */,
-				B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		EF6BD6B7373E0C5E8F4F29DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				827B29761D3C73A600B8AAD1 /* Reveal.framework */,
 				82C06F751C9FD26100371B09 /* ImageIO.framework */,
-				82EA15DC1C5F362A009B69F4 /* SnapKit.framework */,
-				82EA15DA1C5F3618009B69F4 /* Alamofire.framework */,
-				51016A63823C28D4A225B639 /* libPods-RogueKitDemo.a */,
+				522C61A1F8F1E2660BFAE821 /* libPods-RogueKitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,13 +453,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820EC8DB1C3E4A3F00B39563 /* Build configuration list for PBXNativeTarget "RogueKitDemo" */;
 			buildPhases = (
-				54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */,
+				F018B49990D069453D1261F1 /* Check Pods Manifest.lock */,
 				820EC8C01C3E4A3F00B39563 /* Sources */,
 				820EC8C11C3E4A3F00B39563 /* Frameworks */,
 				820EC8C21C3E4A3F00B39563 /* Resources */,
-				8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */,
-				3050FE6244ADF762BEC3D285 /* Copy Pods Resources */,
 				824CFF3A1CA28F6E004E3547 /* ShellScript */,
+				237B2FC8AE6978DEAA13ADF1 /* Embed Pods Frameworks */,
+				BD038136F2C5CC3C3BD2D379 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -545,6 +517,7 @@
 				TargetAttributes = {
 					820EC8C31C3E4A3F00B39563 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZBB923YFHM;
 					};
 					827DF2AE1CA25DE3001F9F30 = {
 						CreatedOnToolsVersion = 7.3;
@@ -620,52 +593,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3050FE6244ADF762BEC3D285 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54923753AC8DD99A80C803AB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		824CFF3A1CA28F6E004E3547 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		8700208FCEDF2877D43CE98D /* Embed Pods Frameworks */ = {
+		237B2FC8AE6978DEAA13ADF1 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -680,6 +608,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		824CFF3A1CA28F6E004E3547 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		BD038136F2C5CC3C3BD2D379 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RogueKitDemo/Pods-RogueKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F018B49990D069453D1261F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -692,14 +663,11 @@
 				82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */,
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */,
-				8225169E1C76EB1400B92267 /* RgSwiftOptionalViewController.swift in Sources */,
 				823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */,
 				82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */,
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
-				82718C081C89637600B582CA /* RgCollectViewItem.swift in Sources */,
 				824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */,
-				82718C061C8961B200B582CA /* RgCollectView.swift in Sources */,
 				82BCB8181CA229BC00458760 /* RogueCollectViewItem.m in Sources */,
 				82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */,
 				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
@@ -721,7 +689,6 @@
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
 				82A7A27B1D2B842700ACDB73 /* NSString+Base64.m in Sources */,
 				822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */,
-				82EA15E11C5F366D009B69F4 /* RgSwiftUpimageViewController.swift in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
 				C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */,
@@ -864,13 +831,14 @@
 		};
 		820EC8DC1C3E4A3F00B39563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C0225764004BCD7F5359A3E /* Pods-RogueKitDemo.debug.xcconfig */;
+			baseConfigurationReference = 90FF9C3E6C0F6216D83B6B20 /* Pods-RogueKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZBB923YFHM;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -878,7 +846,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -924,12 +892,13 @@
 		};
 		820EC8DD1C3E4A3F00B39563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B29922FF05A15420FC4529CE /* Pods-RogueKitDemo.release.xcconfig */;
+			baseConfigurationReference = BC48939F2FB74D077C8BFFDE /* Pods-RogueKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZBB923YFHM;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -937,7 +906,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RogueKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
