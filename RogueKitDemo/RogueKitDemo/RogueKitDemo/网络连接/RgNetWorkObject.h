@@ -30,4 +30,6 @@ typedef NS_ENUM(NSInteger, RogueNetWorkType) {
 
 + (void)postMethod:(NSString *)method parameters:(NSDictionary *)parameters complete:(void (^)(NSDictionary *response, RogueNetWorkType networkType))complete;
 
++ (void)getMethod:(NSString *)method parameters:(NSDictionary *)parameters complete:(void (^)(NSDictionary *response, RogueNetWorkType networkType))complete;
+
 @end

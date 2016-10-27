@@ -35,6 +35,9 @@
 		823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BB1C52093400AEDA91 /* RogueBaseViewContorller.m */; };
 		823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */; };
 		823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */; };
+		82420E9F1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82420E9E1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m */; };
+		824C87601DC1DFC100399B32 /* RogueBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C875F1DC1DFC100399B32 /* RogueBaseModel.m */; };
+		824C87631DC1E03B00399B32 /* RgPaChongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C87621DC1E03B00399B32 /* RgPaChongModel.m */; };
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
 		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
@@ -44,6 +47,7 @@
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
 		829D06041D2DF131006C0827 /* UILabel+RgLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06031D2DF131006C0827 /* UILabel+RgLabel.m */; };
 		829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06061D2DFA0D006C0827 /* RgTextField.m */; };
+		82A320171DC05B7100E57429 /* RgPaChongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A320161DC05B7100E57429 /* RgPaChongViewController.m */; };
 		82A7A2781D2B842700ACDB73 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2711D2B842700ACDB73 /* AESCrypt.m */; };
 		82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2731D2B842700ACDB73 /* NSData+Base64.m */; };
 		82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7A2751D2B842700ACDB73 /* NSData+CommonCrypto.m */; };
@@ -126,6 +130,12 @@
 		823E45BE1C52094A00AEDA91 /* RgLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLoginViewController.m; sourceTree = "<group>"; };
 		823E45C01C520AF000AEDA91 /* RgRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgRegisterViewController.h; sourceTree = "<group>"; };
 		823E45C11C520AF000AEDA91 /* RgRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgRegisterViewController.m; sourceTree = "<group>"; };
+		82420E9D1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgChatWithPythonViewController.h; sourceTree = "<group>"; };
+		82420E9E1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgChatWithPythonViewController.m; sourceTree = "<group>"; };
+		824C875E1DC1DFC100399B32 /* RogueBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueBaseModel.h; sourceTree = "<group>"; };
+		824C875F1DC1DFC100399B32 /* RogueBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueBaseModel.m; sourceTree = "<group>"; };
+		824C87611DC1E03B00399B32 /* RgPaChongModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgPaChongModel.h; sourceTree = "<group>"; };
+		824C87621DC1E03B00399B32 /* RgPaChongModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgPaChongModel.m; sourceTree = "<group>"; };
 		824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgWebViewController.h; sourceTree = "<group>"; };
 		824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgWebViewController.m; sourceTree = "<group>"; };
 		824CFF7E1CA3B14C004E3547 /* RgKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainStore.h; sourceTree = "<group>"; };
@@ -146,6 +156,8 @@
 		829D06031D2DF131006C0827 /* UILabel+RgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RgLabel.m"; sourceTree = "<group>"; };
 		829D06051D2DFA0D006C0827 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
 		829D06061D2DFA0D006C0827 /* RgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgTextField.m; sourceTree = "<group>"; };
+		82A320151DC05B7100E57429 /* RgPaChongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgPaChongViewController.h; sourceTree = "<group>"; };
+		82A320161DC05B7100E57429 /* RgPaChongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgPaChongViewController.m; sourceTree = "<group>"; };
 		82A7A2701D2B842700ACDB73 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		82A7A2711D2B842700ACDB73 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
 		82A7A2721D2B842700ACDB73 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -325,6 +337,7 @@
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				82420E9C1DBDD6E600CD9D41 /* chatwithpython */,
 				823D88BB1D2B5F990000C026 /* somePngs */,
 				824CFF7D1CA3B135004E3547 /* KeyChain */,
 				82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */,
@@ -371,6 +384,21 @@
 				82BCB8161CA229BC00458760 /* RogueViewController.m */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		82420E9C1DBDD6E600CD9D41 /* chatwithpython */ = {
+			isa = PBXGroup;
+			children = (
+				82420E9D1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.h */,
+				82420E9E1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m */,
+				82A320151DC05B7100E57429 /* RgPaChongViewController.h */,
+				82A320161DC05B7100E57429 /* RgPaChongViewController.m */,
+				824C875E1DC1DFC100399B32 /* RogueBaseModel.h */,
+				824C875F1DC1DFC100399B32 /* RogueBaseModel.m */,
+				824C87611DC1E03B00399B32 /* RgPaChongModel.h */,
+				824C87621DC1E03B00399B32 /* RgPaChongModel.m */,
+			);
+			path = chatwithpython;
 			sourceTree = "<group>";
 		};
 		824CFF7D1CA3B135004E3547 /* KeyChain */ = {
@@ -664,6 +692,7 @@
 				820EC8CF1C3E4A3F00B39563 /* ViewController.m in Sources */,
 				82BCB8171CA229BC00458760 /* RogueCollectView.m in Sources */,
 				823E45C21C520AF000AEDA91 /* RgRegisterViewController.m in Sources */,
+				82420E9F1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m in Sources */,
 				82718C111C8D5B3400B582CA /* RgCollectViewController1.m in Sources */,
 				820EC8CC1C3E4A3F00B39563 /* AppDelegate.m in Sources */,
 				82F344FB1C561DDC0068746D /* RgZoneViewController.m in Sources */,
@@ -678,8 +707,10 @@
 				829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */,
 				82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
+				824C87601DC1DFC100399B32 /* RogueBaseModel.m in Sources */,
 				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
 				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
+				824C87631DC1E03B00399B32 /* RgPaChongModel.m in Sources */,
 				82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 				827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */,
@@ -692,6 +723,7 @@
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
 				C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */,
+				82A320171DC05B7100E57429 /* RgPaChongViewController.m in Sources */,
 				823E45B81C50BE4D00AEDA91 /* RogueNetWorkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

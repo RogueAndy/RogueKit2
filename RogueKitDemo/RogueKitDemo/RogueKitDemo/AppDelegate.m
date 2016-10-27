@@ -19,6 +19,8 @@
 #import "RgNetWorkObject.h"
 #import "RgKeyChainViewController.h"
 #import "RgMengCengViewController.h"
+#import "RgChatWithPythonViewController.h"
+#import "RgPaChongViewController.h"
 
 @interface AppDelegate ()
 
@@ -31,8 +33,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgMengCengViewController new]];
-//    UINavigationController *vc = [[UINavigationController alloc] initWithNibName:@"RgFirstStoryboard" bundle:nil];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgPaChongViewController new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
