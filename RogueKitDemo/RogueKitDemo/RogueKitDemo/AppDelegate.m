@@ -21,6 +21,7 @@
 #import "RgMengCengViewController.h"
 #import "RgChatWithPythonViewController.h"
 #import "RgPaChongViewController.h"
+#import "FeiViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,7 +34,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgPaChongViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[FeiViewController new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 

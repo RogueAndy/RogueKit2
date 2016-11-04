@@ -38,6 +38,7 @@
 		82420E9F1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82420E9E1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m */; };
 		824C87601DC1DFC100399B32 /* RogueBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C875F1DC1DFC100399B32 /* RogueBaseModel.m */; };
 		824C87631DC1E03B00399B32 /* RgPaChongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C87621DC1E03B00399B32 /* RgPaChongModel.m */; };
+		824C87661DC2475800399B32 /* FeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C87651DC2475800399B32 /* FeiViewController.m */; };
 		824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */; };
 		824CFF801CA3B14C004E3547 /* RgKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF7F1CA3B14C004E3547 /* RgKeyChainStore.m */; };
 		824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824CFF821CA3B233004E3547 /* RgKeyChainViewController.m */; };
@@ -136,6 +137,8 @@
 		824C875F1DC1DFC100399B32 /* RogueBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RogueBaseModel.m; sourceTree = "<group>"; };
 		824C87611DC1E03B00399B32 /* RgPaChongModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgPaChongModel.h; sourceTree = "<group>"; };
 		824C87621DC1E03B00399B32 /* RgPaChongModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgPaChongModel.m; sourceTree = "<group>"; };
+		824C87641DC2475800399B32 /* FeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeiViewController.h; sourceTree = "<group>"; };
+		824C87651DC2475800399B32 /* FeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeiViewController.m; sourceTree = "<group>"; };
 		824CFF7A1CA38F8F004E3547 /* RgWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgWebViewController.h; sourceTree = "<group>"; };
 		824CFF7B1CA38F8F004E3547 /* RgWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgWebViewController.m; sourceTree = "<group>"; };
 		824CFF7E1CA3B14C004E3547 /* RgKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgKeyChainStore.h; sourceTree = "<group>"; };
@@ -397,6 +400,8 @@
 				824C875F1DC1DFC100399B32 /* RogueBaseModel.m */,
 				824C87611DC1E03B00399B32 /* RgPaChongModel.h */,
 				824C87621DC1E03B00399B32 /* RgPaChongModel.m */,
+				824C87641DC2475800399B32 /* FeiViewController.h */,
+				824C87651DC2475800399B32 /* FeiViewController.m */,
 			);
 			path = chatwithpython;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
 				82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
+				824C87661DC2475800399B32 /* FeiViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
 				829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */,
 				82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */,
