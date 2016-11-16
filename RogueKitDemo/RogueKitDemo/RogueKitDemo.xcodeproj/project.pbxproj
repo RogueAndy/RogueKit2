@@ -61,6 +61,8 @@
 		82C06F761C9FD26100371B09 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C06F751C9FD26100371B09 /* ImageIO.framework */; };
 		82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */; };
 		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
+		82DF915C1DDBECFE0049A7A2 /* RgMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF915B1DDBECFE0049A7A2 /* RgMasonryViewController.m */; };
+		82DF915F1DDBED140049A7A2 /* RgMasonryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF915E1DDBED140049A7A2 /* RgMasonryObj.m */; };
 		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
 		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
 		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
@@ -183,6 +185,10 @@
 		82C06F7D1C9FEA0600371B09 /* UIImageView+RgGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RgGIF.m"; sourceTree = "<group>"; };
 		82D4B7391C9B968D00A6D08E /* RgStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgStoryViewController.h; sourceTree = "<group>"; };
 		82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgStoryViewController.m; sourceTree = "<group>"; };
+		82DF915A1DDBECFE0049A7A2 /* RgMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMasonryViewController.h; sourceTree = "<group>"; };
+		82DF915B1DDBECFE0049A7A2 /* RgMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMasonryViewController.m; sourceTree = "<group>"; };
+		82DF915D1DDBED140049A7A2 /* RgMasonryObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMasonryObj.h; sourceTree = "<group>"; };
+		82DF915E1DDBED140049A7A2 /* RgMasonryObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMasonryObj.m; sourceTree = "<group>"; };
 		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
 		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
@@ -340,6 +346,7 @@
 		823E45B91C52090900AEDA91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				82DF91591DDBECEC0049A7A2 /* masonryVC */,
 				82420E9C1DBDD6E600CD9D41 /* chatwithpython */,
 				823D88BB1D2B5F990000C026 /* somePngs */,
 				824CFF7D1CA3B135004E3547 /* KeyChain */,
@@ -439,6 +446,17 @@
 				82A7A2771D2B842700ACDB73 /* NSString+Base64.m */,
 			);
 			path = "AES加密";
+			sourceTree = "<group>";
+		};
+		82DF91591DDBECEC0049A7A2 /* masonryVC */ = {
+			isa = PBXGroup;
+			children = (
+				82DF915A1DDBECFE0049A7A2 /* RgMasonryViewController.h */,
+				82DF915B1DDBECFE0049A7A2 /* RgMasonryViewController.m */,
+				82DF915D1DDBED140049A7A2 /* RgMasonryObj.h */,
+				82DF915E1DDBED140049A7A2 /* RgMasonryObj.m */,
+			);
+			path = masonryVC;
 			sourceTree = "<group>";
 		};
 		82EDC5D41C97A4FD00E574CD /* StoryBoardViewController */ = {
@@ -551,6 +569,7 @@
 					820EC8C31C3E4A3F00B39563 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = ZBB923YFHM;
+						ProvisioningStyle = Automatic;
 					};
 					827DF2AE1CA25DE3001F9F30 = {
 						CreatedOnToolsVersion = 7.3;
@@ -707,12 +726,14 @@
 				824CFF7C1CA38F8F004E3547 /* RgWebViewController.m in Sources */,
 				82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */,
 				82A7A2791D2B842700ACDB73 /* NSData+Base64.m in Sources */,
+				82DF915F1DDBED140049A7A2 /* RgMasonryObj.m in Sources */,
 				823E45BF1C52094A00AEDA91 /* RgLoginViewController.m in Sources */,
 				824C87661DC2475800399B32 /* FeiViewController.m in Sources */,
 				82F344F81C561D9F0068746D /* RgTabbarViewController.m in Sources */,
 				829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */,
 				82A7A27A1D2B842700ACDB73 /* NSData+CommonCrypto.m in Sources */,
 				820EC8C91C3E4A3F00B39563 /* main.m in Sources */,
+				82DF915C1DDBECFE0049A7A2 /* RgMasonryViewController.m in Sources */,
 				824C87601DC1DFC100399B32 /* RogueBaseModel.m in Sources */,
 				823E45A91C4E349D00AEDA91 /* RogueCache.m in Sources */,
 				82BCB8191CA229BC00458760 /* RogueViewController.m in Sources */,
@@ -873,8 +894,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 619455850@qq.com (HDC3YL8QQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 619455850@qq.com (HDC3YL8QQ8)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = ZBB923YFHM;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -921,7 +942,7 @@
 					"-framework",
 					Reveal,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RogueKitDemo/SwiftViews/RogueKitDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -934,7 +955,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 619455850@qq.com (HDC3YL8QQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 619455850@qq.com (HDC3YL8QQ8)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = ZBB923YFHM;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -981,7 +1003,7 @@
 					"-framework",
 					Reveal,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogue.zlj.RogueKitDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RogueKitDemo/SwiftViews/RogueKitDemo-Bridging-Header.h";
 			};
