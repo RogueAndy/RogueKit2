@@ -63,6 +63,7 @@
 		82D4B73B1C9B968D00A6D08E /* RgStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D4B73A1C9B968D00A6D08E /* RgStoryViewController.m */; };
 		82DF915C1DDBECFE0049A7A2 /* RgMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF915B1DDBECFE0049A7A2 /* RgMasonryViewController.m */; };
 		82DF915F1DDBED140049A7A2 /* RgMasonryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF915E1DDBED140049A7A2 /* RgMasonryObj.m */; };
+		82DF91621DDC07770049A7A2 /* RgPaChongURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF91611DDC07770049A7A2 /* RgPaChongURLSessionViewController.m */; };
 		82EA15E41C5F4186009B69F4 /* RgUpimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */; };
 		82EDC5D81C97A6E200E574CD /* RgFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC5D71C97A6E200E574CD /* RgFirstStoryboard.storyboard */; };
 		82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC5E01C9A827D00E574CD /* RgNetWorkObject.m */; };
@@ -189,6 +190,8 @@
 		82DF915B1DDBECFE0049A7A2 /* RgMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMasonryViewController.m; sourceTree = "<group>"; };
 		82DF915D1DDBED140049A7A2 /* RgMasonryObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgMasonryObj.h; sourceTree = "<group>"; };
 		82DF915E1DDBED140049A7A2 /* RgMasonryObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgMasonryObj.m; sourceTree = "<group>"; };
+		82DF91601DDC07770049A7A2 /* RgPaChongURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgPaChongURLSessionViewController.h; sourceTree = "<group>"; };
+		82DF91611DDC07770049A7A2 /* RgPaChongURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgPaChongURLSessionViewController.m; sourceTree = "<group>"; };
 		82EA15DF1C5F366D009B69F4 /* RogueKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RogueKitDemo-Bridging-Header.h"; path = "SwiftViews/RogueKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		82EA15E21C5F4186009B69F4 /* RgUpimageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgUpimageViewController.h; sourceTree = "<group>"; };
 		82EA15E31C5F4186009B69F4 /* RgUpimageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgUpimageViewController.m; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 				82420E9E1DBDD6FF00CD9D41 /* RgChatWithPythonViewController.m */,
 				82A320151DC05B7100E57429 /* RgPaChongViewController.h */,
 				82A320161DC05B7100E57429 /* RgPaChongViewController.m */,
+				82DF91601DDC07770049A7A2 /* RgPaChongURLSessionViewController.h */,
+				82DF91611DDC07770049A7A2 /* RgPaChongURLSessionViewController.m */,
 				824C875E1DC1DFC100399B32 /* RogueBaseModel.h */,
 				824C875F1DC1DFC100399B32 /* RogueBaseModel.m */,
 				824C87611DC1E03B00399B32 /* RgPaChongModel.h */,
@@ -741,6 +746,7 @@
 				82BCB81C1CA2300800458760 /* RogueUserObject.m in Sources */,
 				820EC8E11C3E52B200B39563 /* RgLoadingController.m in Sources */,
 				827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */,
+				82DF91621DDC07770049A7A2 /* RgPaChongURLSessionViewController.m in Sources */,
 				82C06F7F1C9FEA0600371B09 /* UIImageView+RgGIF.m in Sources */,
 				82A7A2781D2B842700ACDB73 /* AESCrypt.m in Sources */,
 				82F344F51C561D720068746D /* RgHomeViewController.m in Sources */,

@@ -28,4 +28,6 @@
 
 - (RgMasonryObj *)method3;
 
+- (RgMasonryObj * (^)(NSString *str))method4:(NSString *)str;
+
 @end

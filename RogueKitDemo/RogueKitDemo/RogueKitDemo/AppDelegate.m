@@ -22,6 +22,7 @@
 #import "RgChatWithPythonViewController.h"
 #import "RgPaChongViewController.h"
 #import "FeiViewController.h"
+#import "RgPaChongURLSessionViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,7 +35,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[FeiViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgPaChongURLSessionViewController new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 

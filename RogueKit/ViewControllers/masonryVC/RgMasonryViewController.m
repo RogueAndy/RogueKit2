@@ -24,6 +24,7 @@
     RgMasonryObj *obj2 = [obj method2:@"ddd"];
     RgMasonryObj *obj3 = obj.rightAttribution;
     RgMasonryObj *dd = obj.equalWithSelf(@(55));
+    
     NSLog(@"%@", dic);
     
     UIView *testView = [UIView new];
