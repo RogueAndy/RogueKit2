@@ -6,12 +6,10 @@
 target 'RogueKitDemo' do
 
 pod 'Masonry'
-pod 'MBProgressHUD'
+pod 'MBProgressHUD', '~> 1.0.0'
 pod 'AFNetworking'
 pod 'TOWebViewController'
 pod 'UICKeyChainStore'
-
-
 
 end
 

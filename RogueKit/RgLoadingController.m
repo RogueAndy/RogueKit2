@@ -320,14 +320,14 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
         rect.size.width = rect.size.width > 48 ? rect.size.width : 48;
     }
     
-    self.hud.labelText = title;
+    self.hud.label.text = title;
 }
 
 - (void)showLoadingActivityView:(MBProgressHUDMode)mode {
     
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
-    [_hud show:YES];
+    [_hud showAnimated:YES];
     
 }
 
@@ -335,7 +335,7 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
 
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
-    [_hud show:YES];
+    [_hud showAnimated:YES];
     [imageView startAnimating];
 
 }
@@ -350,7 +350,7 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
         [weakSelf removeToAllLoadingActivityViewControllers];
         if(completeBlock){completeBlock();}
     }];
-    [_hud hide:YES afterDelay:after];
+    [_hud hideAnimated:YES afterDelay:after];
 
 }
 

@@ -23,6 +23,7 @@
 #import "RgPaChongViewController.h"
 #import "FeiViewController.h"
 #import "RgPaChongURLSessionViewController.h"
+#import "RLoadingController.h"
 
 @interface AppDelegate ()
 
@@ -35,7 +36,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RgPaChongURLSessionViewController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RLoadingController new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
