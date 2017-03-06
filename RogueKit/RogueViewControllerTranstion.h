@@ -9,6 +9,28 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+/**
+ 枚举类型
+
+ - RoguePushAlphaTranstion: 和原本的方式相同
+ - RoguePushTopToBottomPresentTranstion: 上到下过度
+ - RoguePushBottomToTopPresentTranstion: 下到上过度
+ - RoguePushLeftToRightTranstion: 左到右过度
+ - RoguePushRightToLeftTranstion: 右到左过度
+ - RoguePushAlphaTopToBottomPresentTranstion: 渐影上到下过度
+ - RoguePushAlphaBottomToTopPresentTranstion: 渐影下到上过度
+ - RoguePushAlphaLeftToRightTranstion: 渐影左到右过度
+ - RoguePushAlphaRightToLeftTranstion: 渐影右到左过度
+ - RoguePopAlphaTranstion: 渐影过度
+ - RoguePopBottomToTopPresentTranstion: POP下到上过度
+ - RoguePopTopToBottomPresentTranstion: POP上到下过度
+ - RoguePopRightToLeftTranstion: POP右到左过度
+ - RoguePopLeftToRightTranstion: POP左到右过度
+ - RoguePopAlphaBottomToTopPresentTranstion: POP渐影下到上过度
+ - RoguePopAlphaTopToBottomPresentTranstion: POP渐影上到下过度
+ - RoguePopAlphaRightToLeftTranstion: POP渐影右到左过度
+ - RoguePopAlphaLeftToRightTranstion: POP渐影左到右过度
+ */
 typedef NS_ENUM(NSInteger, RogueTranstionType)
 {
 

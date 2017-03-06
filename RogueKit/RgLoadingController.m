@@ -320,10 +320,19 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
         rect.size.width = rect.size.width > 48 ? rect.size.width : 48;
     }
     
+    if(!title) {return;}
     self.hud.label.text = title;
 }
 
 - (void)showLoadingActivityView:(MBProgressHUDMode)mode {
+    
+    if([_hud respondsToSelector:@selector(showAnimated:)]) {
+    
+        NSLog(@"ddd");
+    
+    }
+    
+    return;
     
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
