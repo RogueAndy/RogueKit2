@@ -7,7 +7,7 @@
 //
 
 #import "RogueViewControllerTranstion.h"
-#import "RogueCache.h"
+#import "RTranstionCache.h"
 
 #define RgBound [[UIScreen mainScreen] bounds]
 
@@ -36,9 +36,9 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
 
-    if([RogueCache shareInstance].transtionDuration) {
+    if([RTranstionCache shareInstance].transtionDuration) {
      
-        return [RogueCache shareInstance].transtionDuration;
+        return [RTranstionCache shareInstance].transtionDuration;
     
     }
     return self.duration;
@@ -51,9 +51,9 @@
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIView *container = [transitionContext containerView];
     
-    if([RogueCache shareInstance].transtionType) {
+    if([RTranstionCache shareInstance].transtionType) {
     
-        self.transtionType = [RogueCache shareInstance].transtionType;
+        self.transtionType = [RTranstionCache shareInstance].transtionType;
     
     }
     
@@ -469,6 +469,183 @@
             break;
             
     }
+
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@implementation UINavigationController (RogueNavigationController)
+
+#pragma mark - pushViewController
+
+- (void)pushAlpha_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushAlphaTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushTopToBottomPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushTopToBottomPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushBottomToTopPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushBottomToTopPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+    
+}
+
+- (void)pushLeftToRight_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushLeftToRightTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushRightToLeft_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushRightToLeftTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushAlphaTopToBottomPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushAlphaTopToBottomPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushAlphaBottomToTopPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushAlphaBottomToTopPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushAlphaLeftToRight_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushAlphaLeftToRightTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+- (void)pushAlphaRightToLeft_pushViewController:(UIViewController *)viewController animated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePushAlphaRightToLeftTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self pushViewController:viewController animated:animate];
+
+}
+
+#pragma mark - popViewController
+
+- (void)popAlpha_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopAlphaTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popBottomToTopPresent_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopBottomToTopPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popTopToBottomPresent_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopTopToBottomPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popRightToLeft_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopRightToLeftTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popLeftToRight_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopLeftToRightTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popAlphaBottomToTopPresent_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopAlphaBottomToTopPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popAlphaTopToBottomPresent_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopAlphaTopToBottomPresentTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popAlphaRightToLeft_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopAlphaRightToLeftTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
+
+}
+
+- (void)popAlphaLeftToRight_popViewControllerAnimated:(BOOL)animate {
+
+    [RTranstionCache shareInstance].transtionType = RoguePopAlphaLeftToRightTranstion;
+    [RTranstionCache shareInstance].transtionDuration = 0.25;
+    [self popViewControllerAnimated:animate];
 
 }
 

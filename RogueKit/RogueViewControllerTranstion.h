@@ -61,3 +61,28 @@ typedef NS_ENUM(NSInteger, RogueTranstionType)
 + (instancetype)transtionWithAnimationType:(RogueTranstionType)type duration:(CGFloat)time viewControllerClasses:(NSArray *)classes;
 
 @end
+
+
+
+@interface UINavigationController (RogueNavigationController)
+
+- (void)pushAlpha_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushTopToBottomPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushBottomToTopPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushLeftToRight_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushRightToLeft_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushAlphaTopToBottomPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushAlphaBottomToTopPresent_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushAlphaLeftToRight_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)pushAlphaRightToLeft_pushViewController:(UIViewController *)viewController animated:(BOOL)animate;
+- (void)popAlpha_popViewControllerAnimated:(BOOL)animate;
+- (void)popBottomToTopPresent_popViewControllerAnimated:(BOOL)animate;
+- (void)popTopToBottomPresent_popViewControllerAnimated:(BOOL)animate;
+- (void)popRightToLeft_popViewControllerAnimated:(BOOL)animate;
+- (void)popLeftToRight_popViewControllerAnimated:(BOOL)animate;
+- (void)popAlphaBottomToTopPresent_popViewControllerAnimated:(BOOL)animate;
+- (void)popAlphaTopToBottomPresent_popViewControllerAnimated:(BOOL)animate;
+- (void)popAlphaRightToLeft_popViewControllerAnimated:(BOOL)animate;
+- (void)popAlphaLeftToRight_popViewControllerAnimated:(BOOL)animate;
+
+@end

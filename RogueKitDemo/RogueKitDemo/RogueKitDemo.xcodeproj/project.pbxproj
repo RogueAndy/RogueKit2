@@ -48,6 +48,7 @@
 		827DF2AA1CA23F0F001F9F30 /* RgUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2A91CA23F0F001F9F30 /* RgUserObject.m */; };
 		827DF2B21CA25DE6001F9F30 /* RogueKitDemoTests22.m in Sources */ = {isa = PBXBuildFile; fileRef = 827DF2B11CA25DE6001F9F30 /* RogueKitDemoTests22.m */; };
 		82962B8B1C92AEE3003716E6 /* RgLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */; };
+		829A5E0A1EBC636E00A74CC1 /* RTranstionCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 829A5E091EBC636E00A74CC1 /* RTranstionCache.m */; };
 		829D06041D2DF131006C0827 /* UILabel+RgLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06031D2DF131006C0827 /* UILabel+RgLabel.m */; };
 		829D06071D2DFA0D006C0827 /* RgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D06061D2DFA0D006C0827 /* RgTextField.m */; };
 		82A320171DC05B7100E57429 /* RgPaChongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A320161DC05B7100E57429 /* RgPaChongViewController.m */; };
@@ -160,6 +161,8 @@
 		827DF2B31CA25DE6001F9F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82962B891C92AEE3003716E6 /* RgLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgLayerAnimationViewController.h; sourceTree = "<group>"; };
 		82962B8A1C92AEE3003716E6 /* RgLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RgLayerAnimationViewController.m; sourceTree = "<group>"; };
+		829A5E081EBC636E00A74CC1 /* RTranstionCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTranstionCache.h; sourceTree = "<group>"; };
+		829A5E091EBC636E00A74CC1 /* RTranstionCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTranstionCache.m; sourceTree = "<group>"; };
 		829D06021D2DF131006C0827 /* UILabel+RgLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RgLabel.h"; sourceTree = "<group>"; };
 		829D06031D2DF131006C0827 /* UILabel+RgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RgLabel.m"; sourceTree = "<group>"; };
 		829D06051D2DFA0D006C0827 /* RgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RgTextField.h; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 				82BCB81B1CA2300800458760 /* RogueUserObject.m */,
 				829D06021D2DF131006C0827 /* UILabel+RgLabel.h */,
 				829D06031D2DF131006C0827 /* UILabel+RgLabel.m */,
+				829A5E081EBC636E00A74CC1 /* RTranstionCache.h */,
+				829A5E091EBC636E00A74CC1 /* RTranstionCache.m */,
 			);
 			name = RogueKit;
 			path = ../../../RogueKit;
@@ -759,6 +764,7 @@
 				82EDC5E11C9A827D00E574CD /* RgNetWorkObject.m in Sources */,
 				82A7A27B1D2B842700ACDB73 /* NSString+Base64.m in Sources */,
 				822C3F931CC8AE3400A7EE13 /* RgRunTimeViewController.m in Sources */,
+				829A5E0A1EBC636E00A74CC1 /* RTranstionCache.m in Sources */,
 				823E45BC1C52093400AEDA91 /* RogueBaseViewContorller.m in Sources */,
 				824CFF831CA3B233004E3547 /* RgKeyChainViewController.m in Sources */,
 				C1B7892F1D5D165400051EC5 /* RgMengCengViewController.m in Sources */,

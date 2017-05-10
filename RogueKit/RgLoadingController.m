@@ -332,8 +332,6 @@ static NSMutableArray *ly_pAllLoadingActivityViewControllers = nil;
     
     }
     
-    return;
-    
     [_hud setMode:mode];
     [self addToAllLoadingActivityViewControllers];
     [_hud showAnimated:YES];

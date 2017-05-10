@@ -119,54 +119,43 @@
     
     switch (sender.tag) {
         case 20000: {
-            [RogueCache shareInstance].transtionType = RoguePopTopToBottomPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popTopToBottomPresent_popViewControllerAnimated:YES];
         }
             break;
         case 20001: {
-            [RogueCache shareInstance].transtionType = RoguePopBottomToTopPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popBottomToTopPresent_popViewControllerAnimated:YES];
         }
             break;
         case 20002: {
-            [RogueCache shareInstance].transtionType = RoguePopLeftToRightTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popLeftToRight_popViewControllerAnimated:YES];
         }
             break;
         case 20003: {
-            [RogueCache shareInstance].transtionType = RoguePopRightToLeftTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popRightToLeft_popViewControllerAnimated:YES];
         }
             break;
         case 20004: {
-            [RogueCache shareInstance].transtionType = RoguePopAlphaTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popAlpha_popViewControllerAnimated:YES];
         }
             break;
         case 20005: {
-            [RogueCache shareInstance].transtionType = RoguePopAlphaTopToBottomPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popAlphaTopToBottomPresent_popViewControllerAnimated:YES];
         }
             break;
         case 20006: {
-            [RogueCache shareInstance].transtionType = RoguePopAlphaBottomToTopPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popAlphaBottomToTopPresent_popViewControllerAnimated:YES];
         }
             break;
         case 20007: {
-            [RogueCache shareInstance].transtionType = RoguePopAlphaLeftToRightTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popAlphaLeftToRight_popViewControllerAnimated:YES];
         }
             break;
         case 20008: {
-            [RogueCache shareInstance].transtionType = RoguePopAlphaRightToLeftTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController popAlphaRightToLeft_popViewControllerAnimated:YES];
         }
             break;
             
     }
-    
-    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
@@ -264,58 +253,48 @@
 
 - (void)push:(UIButton *)sender {
     
+    ViewController2 *v2 = [ViewController2 new];
+    
     switch (sender.tag) {
         case 10000: {
-            [RogueCache shareInstance].transtionType = RoguePushTopToBottomPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushTopToBottomPresent_pushViewController:v2 animated:YES];
         }
             break;
         case 10001: {
-            [RogueCache shareInstance].transtionType = RoguePushBottomToTopPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushBottomToTopPresent_pushViewController:v2 animated:YES];
         }
             break;
         case 10002: {
-            [RogueCache shareInstance].transtionType = RoguePushLeftToRightTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushLeftToRight_pushViewController:v2 animated:YES];
         }
             break;
         case 10003: {
-            [RogueCache shareInstance].transtionType = RoguePushRightToLeftTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushRightToLeft_pushViewController:v2 animated:YES];
         }
             break;
         case 10004: {
-            [RogueCache shareInstance].transtionType = RoguePushAlphaTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushAlpha_pushViewController:v2 animated:YES];
         }
             break;
             
         case 10005: {
-            [RogueCache shareInstance].transtionType = RoguePushAlphaTopToBottomPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushAlphaTopToBottomPresent_pushViewController:v2 animated:YES];
         }
             break;
         case 10006: {
-            [RogueCache shareInstance].transtionType = RoguePushAlphaBottomToTopPresentTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushAlphaBottomToTopPresent_pushViewController:v2 animated:YES];
         }
             break;
         case 10007: {
-            [RogueCache shareInstance].transtionType = RoguePushAlphaLeftToRightTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushAlphaLeftToRight_pushViewController:v2 animated:YES];
         }
             break;
         case 10008: {
-            [RogueCache shareInstance].transtionType = RoguePushAlphaRightToLeftTranstion;
-            [RogueCache shareInstance].transtionDuration = 0.4;
+            [self.navigationController pushAlphaRightToLeft_pushViewController:v2 animated:YES];
         }
             break;
     
     }
-    
-    ViewController2 *v2 = [ViewController2 new];
-    [self.navigationController pushViewController:v2 animated:YES];
 
 }
 

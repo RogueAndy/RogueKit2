@@ -36,7 +36,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[RLoadingController new]];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
